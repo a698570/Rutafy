@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Rutafy/static/css/main.25ac248d.chunk.css",
+    "main.js": "/Rutafy/static/js/main.e68153d2.chunk.js",
+    "main.js.map": "/Rutafy/static/js/main.e68153d2.chunk.js.map",
+    "runtime~main.js": "/Rutafy/static/js/runtime~main.43456458.js",
+    "runtime~main.js.map": "/Rutafy/static/js/runtime~main.43456458.js.map",
+    "static/js/2.512f490e.chunk.js": "/Rutafy/static/js/2.512f490e.chunk.js",
+    "static/js/2.512f490e.chunk.js.map": "/Rutafy/static/js/2.512f490e.chunk.js.map",
+    "index.html": "/Rutafy/index.html",
+    "precache-manifest.afe48255c5935ef6080221b367718b30.js": "/Rutafy/precache-manifest.afe48255c5935ef6080221b367718b30.js",
+    "service-worker.js": "/Rutafy/service-worker.js",
+    "static/css/main.25ac248d.chunk.css.map": "/Rutafy/static/css/main.25ac248d.chunk.css.map",
+    "static/media/logo.svg": "/Rutafy/static/media/logo.5d5d9eef.svg",
+    "static/media/shape.svg": "/Rutafy/static/media/shape.208f3d38.svg"
+  }
+}
