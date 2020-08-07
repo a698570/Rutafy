@@ -1,0 +1,834 @@
+{
+  "responseHeader":{
+    "status":0,
+    "QTime":1,
+    "params":{
+      "indent":"on",
+      "wt":"json",
+      "rows":"2147483647",
+      "fl":"assetCategoryNames,content,description,location,municipio,provincia,title,title_string,web_content/Nombre,web_content/Denominacion-principal,web_content/Denominacion-secundaria,web_content/Descripcion,web_content/Suceso,web_content/Archivo-multimedia,web_content/Autor,web_content/Referencia,web_content/Titulo,web_content/Titulo-enlace,web_content/Era,web_content/Periodo,web_content/Localizacion",
+      "start":"0",
+      "q":"type:bien-cultural AND assetCategoryNames:Paleontología"}},
+  "response":{"numFound":23,"start":0,"docs":[
+      {
+        "location":"40.7086366,-1.2673018",
+        "provincia":"TERUEL",
+        "title":"Pistas fósiles de Bueña",
+        "description":"<p>Al Noreste de la localidad de Bueña, en la comarca del Jiloca, se encuentra el yacimiento de Megaplanolites de Bueña. La Sierra Palomera está formada por una alineación de materiales carbonatados del Jurásico. El yacimiento de Megaplanolites ibericus de Bueña se encuentra en las margas de la Formación Sot de Chera (Jurásico Superior, edad Kimmeridgiense).</p><p>En este yacimiento se han detectado icnitas fósiles que han hecho posible concretar una nueva icnoespecie denominada Megaplanolite I",
+        "title_string":"Pistas fósiles de Bueña",
+        "content":"Pistas fósiles de Bueña Al Noreste de la localidad de Bueña, en la comarca del Jiloca, se encuentra el yacimiento de Megaplanolites de Bueña. La Sierra Palomera está formada por una alineación de materiales carbonatados del Jurásico. El yacimiento de Megaplanolites ibericus de Bueña se encuentra en las margas de la Formación Sot de Chera (Jurásico Superior, edad Kimmeridgiense). En este yacimiento se han detectado icnitas fósiles que han hecho posible concretar una nueva icnoespecie denominada Megaplanolite Ibéricus. Por la calidad de los restos hallados se considera único entre los yacimientos europeos de este tipo y de gran importancia dentro del patrimonio geológico español, calificado como Punto de Interés Geológico de Aragón. Las especiales características de fosilización y conservación, así como sus grandes dimensiones permiten que los restos se observen de manera excelente. Tiene así un gran atractivo pedagógico y cultural, por lo que cuenta con un punto de interpretación del paisaje, creado tras los trabajos de Geología Regional realizados por Calvo entre 1984 y 1992.   8999 1-PAL-TER-025-046-002 Ayuntamiento de Bueña http://www.buena.es/ Comarca del Jiloca http://www.jiloca.es/ Centro de Estudios del Jiloca http://www.xiloca.com/ El yacimiento paleontológico de Megaplanolites ibericus (Bueña, Teruel): un ejemplo de utilización del patrimonio como recurso didáctico CALVO HERNÁNDEZ, J.M. y GIL BAZÁN, E Zona arqueológica, Nº. 4, 2, 2004, pp. 202-213. Las grandes pistas fósiles del Jurásico de Bueña (Teruel) CALVO HERNÁNDEZ, J.M. y GIL BAZÁN, E Revista Naturaleza aragonesa, Amigos del Museo Paleontológico de la Universidad de Zaragoza, Nº 16. Patrimonio geológico minero de Aragón VV.AA Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002.",
+        "municipio":"Bueña",
+        "web_content/Denominacion-principal":[
+          "Pistas fósiles de Bueña"],
+        "web_content/Descripcion":[
+          "<p> Al Noreste de la localidad de Bueña, en la comarca del Jiloca, se encuentra el yacimiento de Megaplanolites de Bueña. La Sierra Palomera está formada por una alineación de materiales carbonatados del Jurásico. El yacimiento de Megaplanolites ibericus de Bueña se encuentra en las margas de la Formación Sot de Chera (Jurásico Superior, edad Kimmeridgiense).</p> <p> En este yacimiento se han detectado icnitas fósiles que han hecho posible concretar una nueva icnoespecie denominada Megaplanolite Ibéricus. Por la calidad de los restos hallados se considera único entre los yacimientos europeos de este tipo y de gran importancia dentro del patrimonio geológico español, calificado como Punto de Interés Geológico de Aragón.</p> <p> Las especiales características de fosilización y conservación, así como sus grandes dimensiones permiten que los restos se observen de manera excelente. Tiene así un gran atractivo pedagógico y cultural, por lo que cuenta con un punto de interpretación del paisaje, creado tras los trabajos de Geología Regional realizados por Calvo entre 1984 y 1992.</p> <p> &nbsp;</p>"],
+        "web_content/Titulo":[
+          "Patrimonio geológico minero de Aragón"],
+        "web_content/Periodo":[
+          "Jurásico"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002."],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=00ecc744-58d3-4cb8-a208-452dd19c6c3e&groupId=10157&t=1318928756519"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Jiloca",
+          "Bueña",
+          "Mesozoico",
+          "Jurásico",
+          "Paleontología",
+          "Bueña"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Centro de Estudios del Jiloca"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"40.8004292,-0.3202745",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de El Barranquillo",
+        "description":"El yacimiento de <em>El Barranquillo</em> se ubica cerca de la ermita del Llovedor en el término municipal de Castellote. Contiene árboles fósiles conservados en sílice que formaron parte de un bosque Cretácico",
+        "title_string":"Yacimiento de El Barranquillo",
+        "content":"Yacimiento de El Barranquillo El yacimiento de El Barranquillo se ubica cerca de la ermita del Llovedor en el término municipal de Castellote. Contiene árboles fósiles conservados en sílice que formaron parte de un bosque Cretácico. Se han excavado cuatro troncos fósiles de tres especies diferentes de coníferas, de un total indeterminado que contiene este yacimiento. Por su posición y conservación ha sido posible determinar su proceso de fosilización. El bosque al que pertenecieron se formó en torno a un río y tras una crecida fueron arrancados del suelo, embarrancaron y se enterraron rápidamente. A partir de ese momento se produjeron los procesos de carbonificación y silicificación. El yacimiento ha sido excavado en su zona más externa y se presupone que en la más interna se encuentran muchos más fragmentos e incluso restos de las primeras plantas con flor de la Península Ibérica. La importancia de su estudio radica en la poca información que se tiene sobre los bosques del Cretácico en la península.   9999 C/ Virgen del Agua, 2. 44560 Castellote (Teruel) Ayuntamiento de Castellote 978 887 593 Ayuntamiento de Castellote http://www.castellote.es/ Comarca del Maestrazgo http://www.comarcamaestrazgo.es/ Turismo por el Maestrazgo http://www.turismomaestrazgo.com Parque Cultural del Maestrazgo http://www.maestrazgo.org/pcm.htm Tafonomía de los troncos silicificados albienses del yacimiento de \"El Barranquillo\" (Castellote, provincia de Teruel, España) VV.AA Revista Española de Paleontología, 1999, SEP; 14 (2). Patrimonio geológico minero de Aragón VV.AA Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002.",
+        "municipio":"Castellote",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de El Barranquillo"],
+        "web_content/Descripcion":[
+          "<p> El yacimiento de <em>El Barranquillo</em> se ubica cerca de la ermita del Llovedor en el término municipal de Castellote. Contiene árboles fósiles conservados en sílice que formaron parte de un bosque Cretácico. Se han excavado cuatro troncos fósiles de tres especies diferentes de coníferas, de un total indeterminado que contiene este yacimiento.</p> <p> Por su posición y conservación ha sido posible determinar su proceso de fosilización. El bosque al que pertenecieron se formó en torno a un río y tras una crecida fueron arrancados del suelo, embarrancaron y se enterraron rápidamente. A partir de ese momento se produjeron los procesos de carbonificación y silicificación.</p> <p id=\"aui_3_2_0_19971\"> El yacimiento ha sido excavado en su zona más externa y se presupone que en la más interna se encuentran muchos más fragmentos e incluso restos de las primeras plantas con flor de la Península Ibérica. La importancia de su estudio radica en la poca información que se tiene sobre los bosques del Cretácico en la península.</p> <p id=\"aui_3_2_0_19978\"> &nbsp;</p>"],
+        "web_content/Titulo":[
+          "Patrimonio geológico minero de Aragón"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002."],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=8493aab2-7846-496b-8497-5c6eec63747a&groupId=10157&t=1318930590865"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Maestrazgo",
+          "Castellote",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Castellote"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Parque Cultural del Maestrazgo"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"40.3794361,-1.1458717",
+        "provincia":"TERUEL",
+        "title":"Cerro de la Garita y Barrranco de las Calaveras",
+        "description":"En las cercanías de Concud localidad cercana a Teruel se localizan los yacimientos paleontológicos del Barranco de las Calaveras y el Cerro de la Garita. Estos yacimientos tipifican el <em>Turoliense</em> (Mioceno superior). Del Cerro de la Garita proceden la mayor parte de las colecciones modernas de mamíferos de Teruel.",
+        "title_string":"Cerro de la Garita y Barrranco de las Calaveras",
+        "content":"Cerro de la Garita y Barrranco de las Calaveras Los yacimientos paleontológicos, Barranco de las Calaveras y Cerro de la Garita, se sitúan en las cercanías de Concud, a 4 Km de Teruel. Se localizan a unos 2,5 Km. al Norte de dicha población siguiendo la carretera a Celadas. Estos yacimientos tipifican el Turoliense (Mioceno superior), originados en una etapa de transición entre niveles de sedimentos depositados en complejos aluviales y otros resultantes de la instalación de un sistema lacustre somero. El Barranco de las Calaveras, es conocido desde el siglo XVIII. El Cerro de la Garita, fue descubierto en 1924. De este lugar procede la mayor parte de los fósiles que constituyen las colecciones modernas de mamíferos de Teruel. Los yacimientos están formados por calizas blancas bien estratificadas separadas por niveles margosos o arcillosos, correspondientes a una etapa de transición entre niveles de sedimentos originados en sistema de abanicos y otros resultantes de la presencia de un sistema compuesto por varios lagos de poca profundidad: En ellos se ha obtenido una abundante fauna de mamíferos que ha permitido una datación muy precisa, dando lugar al establecimiento de una edad geológica internacionalmente admitida, denominada Turoliense, que se encuentra situada en el Mioceno (Neógeno). Concretamente, se trata del Turoliense medio y su antigüedad se ha cuantificado en torno a unos 7 millones de años. Los datos más recientes indican que el Barranco de las Calaveras tendría una antigüedad de 7,12 millones de años, mientras que la edad del Cerro de la Garita se ha estimado en 6,83 millones de años. Las asociaciones faunísticas allí registradas constituyen una referencia obligada en el contexto de estudios de mamíferos del Neógeno euroasiático. El Cerro de la Garita fue seleccionado para la investigación por ofrecer mayores facilidades de excavación y de él procede la documentación paleontológica moderna, que se suele referir de modo genérico a Concud. Entre los mamíferos fósiles que encontramos en el yacimiento, cabe destacar los que llevan el gentilicio de Concud que, junto a otros, como Canis cipio (el perro fósil más antiguo que se ha encontrado), Hispanodorcas torrubiae (un pequeño antílope) o Hipparion concudense (caballo tridáctilo) se describieron por primera vez en la historia paleontológica mediante fósiles procedentes de Concud. Por otra parte, algunas especies, como Simocyon primigenius, sólo se han encontrado en España en este yacimiento. El Boletín Oficial de Aragón del día 20 de octubre de 2004 publica el Decreto 215/2004, de 5 de octubre, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, Zona Paleontológica, los yacimientos denominados Cerro de la Garita y Barranco de las Calaveras, en Concud (Teruel). 8999 Ayuntamiento de Teruel http://www.teruel.es/ Los materiales lacustres del Mioceno de la Cuenca de Teruel-Ademuz en el Barranco del Pozuelo: Edafología VV.AA Boletín Geológico y Minero, 1989 MAR-ABR; 100 (2). Patrimonio geológico minero de Aragón VV.AA Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002.",
+        "municipio":"Teruel",
+        "web_content/Denominacion-principal":[
+          "Cerro de la Garita y Barrranco de las Calaveras"],
+        "web_content/Descripcion":[
+          "<p> Los yacimientos paleontológicos, Barranco de las Calaveras y Cerro de la Garita, se sitúan en las cercanías de Concud, a 4 Km de Teruel. Se localizan a unos 2,5 Km. al Norte de dicha población siguiendo la carretera a Celadas. Estos yacimientos tipifican el Turoliense (Mioceno superior), originados en una etapa de transición entre niveles de sedimentos depositados en complejos aluviales y otros resultantes de la instalación de un sistema lacustre somero.</p> <p> El Barranco de las Calaveras, es conocido desde el siglo XVIII. El Cerro de la Garita, fue descubierto en 1924. De este lugar procede la mayor parte de los fósiles que constituyen las colecciones modernas de mamíferos de Teruel.</p> <p> Los yacimientos están formados por calizas blancas bien estratificadas separadas por niveles margosos o arcillosos, correspondientes a una etapa de transición entre niveles de sedimentos originados en sistema de abanicos y otros resultantes de la presencia de un sistema compuesto por varios lagos de poca profundidad: En ellos se ha obtenido una abundante fauna de mamíferos que ha permitido una datación muy precisa, dando lugar al establecimiento de una edad geológica internacionalmente admitida, denominada Turoliense, que se encuentra situada en el Mioceno (Neógeno). Concretamente, se trata del Turoliense medio y su antigüedad se ha cuantificado en torno a unos 7 millones de años.</p> <p> Los datos más recientes indican que el Barranco de las Calaveras tendría una antigüedad de 7,12 millones de años, mientras que la edad del Cerro de la Garita se ha estimado en 6,83 millones de años. Las asociaciones faunísticas allí registradas constituyen una referencia obligada en el contexto de estudios de mamíferos del Neógeno euroasiático.</p> <p> El Cerro de la Garita fue seleccionado para la investigación por ofrecer mayores facilidades de excavación y de él procede la documentación paleontológica moderna, que se suele referir de modo genérico a Concud.</p> <p> Entre los mamíferos fósiles que encontramos en el yacimiento, cabe destacar los que llevan el gentilicio de Concud que, junto a otros, como Canis cipio (el perro fósil más antiguo que se ha encontrado), Hispanodorcas torrubiae (un pequeño antílope) o Hipparion concudense (caballo tridáctilo) se describieron por primera vez en la historia paleontológica mediante fósiles procedentes de Concud. Por otra parte, algunas especies, como Simocyon primigenius, sólo se han encontrado en España en este yacimiento.</p> <p> El Boletín Oficial de Aragón del día 20 de octubre de 2004 publica el Decreto 215/2004, de 5 de octubre, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, Zona Paleontológica, los yacimientos denominados Cerro de la Garita y Barranco de las Calaveras, en Concud (Teruel).</p>"],
+        "web_content/Titulo":[
+          "Patrimonio geológico minero de Aragón"],
+        "web_content/Periodo":[
+          "Neógeno"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002."],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Teruel",
+          "BIC",
+          "Cenozoico",
+          "Neógeno",
+          "Paleontología",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Concud",
+          "Mamíferos"],
+        "web_content/Era":[
+          "Cenozoico"],
+        "web_content/Titulo-enlace":[
+          "Ayuntamiento de Teruel"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"40.8163674,-0.2734527",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de icnitas de dinosaurio de Abenfigo",
+        "description":"<P align=justify>El yacimiento de icnitas de Abenfigo se halla en el término municipal de Castellote en Teruel. Este yacimiento presenta estratos calizos del Cretácico Superior. Posee un total de 41 huellas tridáctilas de dinosaurio, sin rastros aparentes. Sus rasgos primarios como dedos delgados y acuminados, pisada larga&#8230;permiten asociarlas a un sólo icnogrupo, el de las icnitas terópodas.</P><P align=justify>Dentro del término superior de la Fm. Calizas y Margas de Mosqueruela se local",
+        "title_string":"Yacimiento de icnitas de dinosaurio de Abenfigo",
+        "content":"Yacimiento de icnitas de dinosaurio de Abenfigo Castellote 002 El yacimiento de icnitas de Abenfigo se halla en el término municipal de Castellote en Teruel. Este yacimiento presenta estratos calizos del Cretácico Superior. Posee un total de 41 huellas tridáctilas de dinosaurio, sin rastros aparentes. Sus rasgos primarios como dedos delgados y acuminados, pisada larga¿permiten asociarlas a un sólo icnogrupo, el de las icnitas terópodas. Dentro del término superior de la Fm. Calizas y Margas de Mosqueruela se localiza el estrato que contiene las huellas de dinosaurios. Está compuesto por una parte inferior de calizas bioclásticas (16 cm.) y una parte superior de 2 ó 3 cm. con laminación algal. Contiene calizas con invertebrados del Cenomanense y  caliza micritica con una malla de algas Los dinosaurios al andar hundían y doblaban algas que se acumulaban sobre la caliza bioclástica. Las capas de algas que se formaron tras el paso de los dinosaurios iban tapando estas huellas. Las huellas han aparecido tras la erosión de las capas de algas superiores. Si la erosión es intensa las huellas desaparecerán.     7999 1-PAL-TER-030-071-002 www.dinopolis.com http://www.dinopolis.com/index.php/mod.pags/mem.est/p.mundo_dinos_teruel_5/chk.4cc29dc5a71c982f5f38ed4adf42af6e.html www.caiaragon.com http://www.caiaragon.com/es/municipios/index.asp?tipo=0&idloc=752 Dinosaurios y otros reptiles mesozoicos en España VV.AA Coord. por Félix Pérez Lorente, Instituto de Estudios Riojanos, Universidad de La Rioja, 2003.",
+        "municipio":"Castellote",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de icnitas de dinosaurio de Abenfigo"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> El yacimiento de icnitas de Abenfigo se halla en el término municipal de Castellote en Teruel. Este yacimiento presenta estratos calizos del Cretácico Superior. Posee un total de 41 huellas tridáctilas de dinosaurio, sin rastros aparentes. Sus rasgos primarios como dedos delgados y acuminados, pisada larga¿permiten asociarlas a un sólo icnogrupo, el de las icnitas terópodas.</p> <p align=\"justify\"> Dentro del término superior de la Fm. Calizas y Margas de Mosqueruela se localiza el estrato que contiene las huellas de dinosaurios. Está compuesto por una parte inferior de calizas bioclásticas (16 cm.) y una parte superior de 2 ó 3 cm. con laminación algal. Contiene calizas con invertebrados del Cenomanense y&nbsp; caliza micritica con una malla de algas</p> <p align=\"justify\"> Los dinosaurios al andar hundían y doblaban algas que se acumulaban sobre la caliza bioclástica. Las capas de algas que se formaron tras el paso de los dinosaurios iban tapando estas huellas. Las huellas han aparecido tras la erosión de las capas de algas superiores. Si la erosión es intensa las huellas desaparecerán.</p> <p align=\"justify\"> &nbsp;</p> <p align=\"justify\"> &nbsp;</p>"],
+        "web_content/Titulo":[
+          "Dinosaurios y otros reptiles mesozoicos en España"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Coord. por Félix Pérez Lorente, Instituto de Estudios Riojanos, Universidad de La Rioja, 2003."],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Maestrazgo",
+          "Castellote",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Abenfigo",
+          "Icnitas"],
+        "web_content/Denominacion-secundaria":[
+          "Castellote 002"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "www.caiaragon.com"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"42.0477396,-0.9101965",
+        "provincia":"ZARAGOZA",
+        "title":"Yacimientos de icnitas de mamíferos",
+        "description":"<P>En la localidad de Sierra de Luna, Zaragoza, se descubrió a finales del siglo XX, en el monte Valdeliso, un yacimiento paleontológico de gran relevancia por ser uno de los pocos que se conservan en España y Europa con huellas de mamíferos de la Era Terciaria. Su cronología se establece gracias a un informe definitivo realizado por el Ayuntamiento de Sierra de Luna que ha determinado que las marcas corresponden a la edad terciaria, al Mioceno y por lo tanto tienen más de 20 millones de años.",
+        "title_string":"Yacimientos de icnitas de mamíferos",
+        "content":"Yacimientos de icnitas de mamíferos Yacimientos de icnitas de mamíferos En la localidad de Sierra de Luna, Zaragoza, se descubrió a finales del siglo XX, en el monte Valdeliso, un yacimiento paleontológico de gran relevancia por ser uno de los pocos que se conservan en España y Europa con huellas de mamíferos de la Era Terciaria. Su cronología se establece gracias a un informe definitivo realizado por el Ayuntamiento de Sierra de Luna que ha determinado que las marcas corresponden a la edad terciaria, al Mioceno y por lo tanto tienen más de 20 millones de años. Tan solo existe un hallazgo de las mismas características en Logroño y casi ninguno más en el resto de Europa. En este yacimiento se encontraron un gran número de icnitas o huellas fósiles, que pertenecían, según expertos, a dos tipos de mamíferos. El primer grupo corresponde a pisadas de animales perisodáctilos, es decir, que presentan un número impar de dedos como mastodontes, rinocerontes, cérvidos. El segundo grupo es el de los artiodáctilos que tan solo tienen dos dedos como los de la familia del jabalí. En 2003 se catalogaron pisadas de Aragonienses, un équido herbívoro de hace 10 millones de años. Las huellas han llegado hasta nosotros gracias a que este territorio era una zona de gran humedad en el suelo, lo que propició que los animales hundieran sus patas en él. Se pueden visitar gracias a los trabajos de limpieza y acondicionamiento realizados en el yacimiento. A ellas se accede mediante un camino vallado y se explican con paneles y mesas de interpretación. 7999 C/ Ramón y Cajal, 25. 50612 Sierra de Luna (Zaragoza) Ayuntamiento de Sierra de Luna 976 686 001 Comarca de las Cinco Villas http://www.comarcacincovillas.com",
+        "municipio":"Sierra de Luna",
+        "web_content/Denominacion-principal":[
+          "Yacimientos de icnitas de mamíferos"],
+        "web_content/Descripcion":[
+          "<p style=\"text-align: justify;\"> En la localidad de Sierra de Luna, Zaragoza, se descubrió a finales del siglo XX, en el monte Valdeliso, un yacimiento paleontológico de gran relevancia por ser uno de los pocos que se conservan en España y Europa con huellas de mamíferos de la Era Terciaria. Su cronología se establece gracias a un informe definitivo realizado por el Ayuntamiento de Sierra de Luna que ha determinado que las marcas corresponden a la edad terciaria, al Mioceno y por lo tanto tienen más de 20 millones de años. Tan solo existe un hallazgo de las mismas características en Logroño y casi ninguno más en el resto de Europa.</p> <p style=\"text-align: justify;\"> En este yacimiento se encontraron un gran número de icnitas o huellas fósiles, que pertenecían, según expertos, a dos tipos de mamíferos. El primer grupo corresponde a pisadas de animales perisodáctilos, es decir, que presentan un número impar de dedos como mastodontes, rinocerontes, cérvidos. El segundo grupo es el de los artiodáctilos que tan solo tienen dos dedos como los de la familia del jabalí. En 2003 se catalogaron pisadas de Aragonienses, un équido herbívoro de hace 10 millones de años.</p> <p style=\"text-align: justify;\"> Las huellas han llegado hasta nosotros gracias a que este territorio era una zona de gran humedad en el suelo, lo que propició que los animales hundieran sus patas en él. Se pueden visitar gracias a los trabajos de limpieza y acondicionamiento realizados en el yacimiento. A ellas se accede mediante un camino vallado y se explican con paneles y mesas de interpretación.</p>"],
+        "web_content/Periodo":[
+          "Neógeno"],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=5aa52444-149e-413d-98d5-83304688fb8c&groupId=10157&t=1318930619491"],
+        "assetCategoryNames":[
+          "ZARAGOZA",
+          "Cinco Villas",
+          "Sierra de Luna",
+          "Cenozoico",
+          "Neógeno",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Sierra de Luna",
+          "Icnitas"],
+        "web_content/Denominacion-secundaria":[
+          "Yacimientos de icnitas de mamíferos"],
+        "web_content/Era":[
+          "Cenozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca de las Cinco Villas"]},
+      {
+        "location":"40.7553843,0.0393172",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de Arsis",
+        "description":"El yacimiento de Arsis se ubica dentro del término municipal de Peñarroya de Tastavins en la provincia de Teruel, en la Cordillera Ibérica. En la zona Norte de este yacimiento se han localizado restos de dinosaurio sobre un pequeño anticlinal, considerado el saurópodo más completo encontrado en España",
+        "title_string":"Yacimiento de Arsis",
+        "content":"Yacimiento de Arsis Peñarroya de Tastavins 001 El yacimiento de Arsis se ubica dentro del término municipal de Peñarroya de Tastavins en la provincia de Teruel, en la Cordillera Ibérica. En la zona Norte de este yacimiento se han localizado restos de dinosaurio sobre un pequeño anticlinal, considerado el saurópodo más completo encontrado en España. El hallazgo tuvo lugar en 1997 tras el descubrimiento de fémures y vértebras de dinosaurio por los hermanos Ortiz, aficionados a la Paleontología. Entre las piezas pertenecientes al dinosaurio destaca la cola de tres metros, que prueba lo grande que era este ejemplar. Pudo medir unos 25 metros desde la cola hasta la cabeza y pesar 15 toneladas. Se compara con el Aragosaurus hallado en Galve. Vivió hace 100 millones de años en lo que entonces era una marisma. Otros restos hallados son sedimentos marinos de plataforma somera de la Formación Calizas y Margas de Artoles. Sobre este sedimento se encuentra la secuencia de depósito continental del Aptiense Inferior con la Formación Morella y a continuación la Formación marina Calizas y Margas de Xert. En la base de está última se encontraron los restos del dinosaurio, un saurópodo del Apítense. 8999 Oficina de Turismo de Peñarroya de Tastavins 978 896 667 1-PAL-TER-027-179-001 Territorio Dinopolis http://www.dinopolis.com/inhospitak.html Ayuntamiento de Peñarroya de Tastavins http://www.xn--pearroyadetastavins-w3b.es/ Comarca del Matarraña http://www.comarcamatarranya.es/ Patrimonio geológico minero de Aragón VV.AA Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002.",
+        "municipio":"Peñarroya de Tastavins",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de Arsis"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> El yacimiento de Arsis se ubica dentro del término municipal de Peñarroya de Tastavins en la provincia de Teruel, en la Cordillera Ibérica. En la zona Norte de este yacimiento se han localizado restos de dinosaurio sobre un pequeño anticlinal, considerado el saurópodo más completo encontrado en España. El hallazgo tuvo lugar en 1997 tras el descubrimiento de fémures y vértebras de dinosaurio por los hermanos Ortiz, aficionados a la Paleontología.</p> <p align=\"justify\"> Entre las piezas pertenecientes al dinosaurio destaca la cola de tres metros, que prueba lo grande que era este ejemplar. Pudo medir unos 25 metros desde la cola hasta la cabeza y pesar 15 toneladas. Se compara con el Aragosaurus hallado en Galve. Vivió hace 100 millones de años en lo que&nbsp;entonces era una marisma.</p> <p align=\"justify\"> Otros restos hallados son sedimentos marinos de plataforma somera de la Formación Calizas y Margas de Artoles. Sobre este sedimento se encuentra la secuencia de depósito continental del Aptiense Inferior con la Formación Morella y a continuación la Formación marina Calizas y Margas de Xert. En la base de está última se encontraron los restos del dinosaurio, un saurópodo del Apítense.</p>"],
+        "web_content/Titulo":[
+          "Patrimonio geológico minero de Aragón"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón-Departamento de Industria, comercio y desarrollo, Zaragoza, 2002."],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=55f16667-13fe-48eb-b858-5bf6c12a7523&groupId=10157&t=1318926387755"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Matarraña / Matarranya",
+          "Peñarroya de Tastavins",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Peñarroya de Tastavins",
+          "Bivalvos",
+          "Cocodrilos",
+          "Gasterópodos"],
+        "web_content/Denominacion-secundaria":[
+          "Peñarroya de Tastavins 001"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca del Matarraña"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"41.158814,-1.482376",
+        "provincia":"ZARAGOZA",
+        "title":"Yacimiento Cámbrico de Valdemiedes",
+        "description":"<p align=\"justify\">Murero, desde el punto de vista geológico, atesora un yacimiento de fósiles de enorme importancia. La rambla de Valdemiedes alberga una de las series estratigráficas del período Cámbrico más completas del mundo. Murero es el yacimiento más importante a nivel internacional de trilobites del Cámbrico Inferior y Medio. El yacimiento de Murero fue declarado Bien de Interés Cultural (BIC) en 1997 y está siendo estudiado desde la década de los 70 del siglo XX.</p><p align=\"justify\"",
+        "title_string":"Yacimiento Cámbrico de Valdemiedes",
+        "content":"Yacimiento Cámbrico de Valdemiedes Murero 001 Murero, desde el punto de vista geológico, atesora un yacimiento de fósiles de enorme importancia. La rambla de Valdemiedes alberga una de las series estratigráficas del período Cámbrico más completas del mundo. Murero es el yacimiento más importante a nivel internacional de trilobites del Cámbrico Inferior y Medio. El yacimiento de Murero fue declarado Bien de Interés Cultural (BIC) en 1997 y está siendo estudiado desde la década de los 70 del siglo XX. La sección RV1 comprende las siguientes unidades estratigráficas: Grupo Mesones que abarca la Fm. Valdemiedes, la Fm. Mansilla y la Fm. Murero según las formaciones definidas por LIÑAN (1992) y una cuarta unidad la Fm. Borobia. El grupo Mesones se caracteriza por presentar una alternancia de materiales en facies \"\"Rizada\"\", facies de Dolomías y facies de Pizarras con Trilobites. 9999 Calle Iglesia. 50366 Murero (Zaragoza) Ayuntamiento de Murero 976 800 780 murero@dpz.es 1-PAL-ZAR-024-184-001 Comarca del Campo de Daroca http://www.comarcadedaroca.com/",
+        "municipio":"Murero",
+        "web_content/Denominacion-principal":[
+          "Yacimiento Cámbrico de Valdemiedes"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> Murero, desde el punto de vista geológico, atesora un yacimiento de fósiles de enorme importancia. La rambla de Valdemiedes alberga una de las series estratigráficas del período Cámbrico más completas del mundo. Murero es el yacimiento más importante a nivel internacional de trilobites del Cámbrico Inferior y Medio. El yacimiento de Murero fue declarado Bien de Interés Cultural (BIC) en 1997 y está siendo estudiado desde la década de los 70 del siglo XX.</p> <p align=\"justify\"> La sección RV1 comprende las siguientes unidades estratigráficas: Grupo Mesones que abarca la Fm. Valdemiedes, la Fm. Mansilla y la Fm. Murero según las formaciones definidas por LIÑAN (1992) y una cuarta unidad la Fm. Borobia. El grupo Mesones se caracteriza por presentar una alternancia de materiales en facies \"\"Rizada\"\", facies de Dolomías y facies de Pizarras con Trilobites.</p>"],
+        "web_content/Periodo":[
+          "Cámbrico"],
+        "assetCategoryNames":[
+          "ZARAGOZA",
+          "Campo de Daroca",
+          "Murero",
+          "BIC",
+          "Paleozoico",
+          "Cámbrico",
+          "Paleontología",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Murero",
+          "Equinodermos",
+          "Trilobites"],
+        "web_content/Denominacion-secundaria":[
+          "Murero 001"],
+        "web_content/Era":[
+          "Paleozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca del Campo de Daroca"]},
+      {
+        "location":"42.1212111,-0.0710325",
+        "provincia":"HUESCA",
+        "title":"Yacimiento de la Fondota",
+        "description":"El yacimiento de la Fondota se encuentra en la entrada de la localidad de Abiego. Conserva un importante conjunto de huellas fósiles, casi mil icnitas, que se produjeron sobre barro hace 33 millones de años.",
+        "title_string":"Yacimiento de la Fondota",
+        "content":"Yacimiento de la Fondota El yacimiento de la Fondota se encuentra en la entrada de la localidad de Abiego. Conserva un importante conjunto de huellas fósiles, casi mil icnitas, que se produjeron sobre barro hace 33 millones de años. Las huellas fosilizadas pertenecen a animales herbívoros ahora extinguidos. El proceso de fosilización de estas marcas se produjo gracias a los movimientos tectónicos producidos en esta época en el Pirineo que cubrieron este estrato y lo preservaron de la erosión.   8999 Ayuntamiento de Abiego 974 317 203 http://www.abiego.es/ Ayuntamiento de Abiego http://www.abiego.es/ Comarca Somontano de Barbastro- Turismo http://www.turismosomontano.es/es/ Comarca Somontano de Barbastro http://www.somontano.org/ Icnitas de Abiego VV.AA Col. Patrimonio Cultural nº 28, PRAMES- Gobierno de Aragón, 2007.",
+        "municipio":"Abiego",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de la Fondota"],
+        "web_content/Descripcion":[
+          "<p> El yacimiento de la Fondota se encuentra en la entrada de la localidad de Abiego. Conserva un importante conjunto de huellas fósiles, casi mil icnitas, que se produjeron sobre barro hace 33 millones de años.</p> <p> Las huellas fosilizadas pertenecen a animales herbívoros ahora extinguidos. El proceso de fosilización de estas marcas se produjo gracias a los movimientos tectónicos producidos en esta época en el Pirineo que cubrieron este estrato y lo preservaron de la erosión.</p> <p> &nbsp;</p>"],
+        "web_content/Titulo":[
+          "Icnitas de Abiego"],
+        "web_content/Periodo":[
+          "Paleógeno"],
+        "web_content/Referencia":[
+          "Col. Patrimonio Cultural nº 28, PRAMES- Gobierno de Aragón, 2007."],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=d1a94b52-a30b-420c-bc8d-fcfe2d916a06&groupId=10157&t=1318930615104"],
+        "assetCategoryNames":[
+          "HUESCA",
+          "Somontano de Barbastro",
+          "Abiego",
+          "Cenozoico",
+          "Paleógeno",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Abiego",
+          "Icnitas"],
+        "web_content/Era":[
+          "Cenozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca Somontano de Barbastro"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"40.2247014,-0.9297861999999999",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de La Puebla de Valverde",
+        "description":"En el término municipal de La Puebla de Valverde, en el lugar denominado la Rocha de la Noguera, se encuentra uno de los yacimientos paleontológicos más singulares de la provincia de Teruel por la variedad y la abundancia de restos fósiles de vertebrados del Terciario que conserva, así como su buen estado de conservación",
+        "title_string":"Yacimiento de La Puebla de Valverde",
+        "content":"Yacimiento de La Puebla de Valverde En el término municipal de La Puebla de Valverde, en el lugar denominado la Rocha de la Noguera, se encuentra uno de los yacimientos paleontológicos más singulares de la provincia de Teruel por la variedad y la abundancia de restos fósiles de vertebrados del Terciario que conserva, así como su buen estado de conservación. El yacimiento se encuentra situado en materiales de origen continental, tales como gravas, arenas y limos, de edad Villafranquiense. El esquema estratigráfico de los piedemontes villafranquienses está constituido por dos unidades principales: una alternancia de arcillas y conglomerados de tonos rojos, con eventuales intercalaciones arenosas y unas gravas de cubierta de glacis, de tonos más claros. Entre los restos paleontológicos destaca la presencia de primates, diversos macroma- míferos y aves. Es el único yacimiento en Aragón neógeno en el que se han hallado primates, y uno de los pocos yacimientos de macromamíferos del Plioceno superior en España, también único en Aragón. El Boletín Oficial de Aragón del día 20 de octubre de 2004 publica el Decreto 217/2004, de 5 de octubre, del Gobierno de Aragón, por el que se declara Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, Zona Paleontológica, el yacimiento denominado «La Puebla de Valverde», localizado en el término municipal de La Puebla de Valverde (Teruel). 8999 Calle Mayor, 12. 44450 Puebla de La Valverde (Teruel) Ayuntamiento de La Puebla de Valverde 978 670 001 1-PAL-TER-032-192-001 Ayuntamiento de La Puebla de Valverde http://www.lapuebladevalverde.es Comarca de Gúdar-Javalambre http://www.gudarjavalambre.es/ Datación magnetoestratigráfica del yacimiento paleontológico de Puebla de Valverde (Teruel) SINUSIA, C.; PUEYO, E.L., AZANZA, B. Y POCOVI, A VI Congreso Geológico de España, Zaragoza, 12 al 15 de julio de 2004.",
+        "municipio":"La Puebla de Valverde",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de La Puebla de Valverde"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> En el término municipal de La Puebla de Valverde, en el lugar denominado la Rocha de la Noguera, se encuentra uno de los yacimientos paleontológicos más singulares de la provincia de Teruel por la variedad y la abundancia de restos fósiles de vertebrados del Terciario que conserva, así como su buen estado de conservación.</p> <p align=\"justify\"> El yacimiento se encuentra situado en materiales de origen continental, tales como gravas, arenas y limos, de edad Villafranquiense. El esquema estratigráfico de los piedemontes villafranquienses está constituido por dos unidades principales: una alternancia de arcillas y conglomerados de tonos rojos, con eventuales intercalaciones arenosas y unas gravas de cubierta de glacis, de tonos más claros.</p> <p align=\"justify\"> Entre los restos paleontológicos destaca la presencia de primates, diversos macroma- míferos y aves. Es el único yacimiento en Aragón neógeno en el que se han hallado primates, y uno de los pocos yacimientos de macromamíferos del Plioceno superior en España, también único en Aragón.</p> <p align=\"justify\"> El Boletín Oficial de Aragón del día 20 de octubre de 2004 publica el Decreto&nbsp;217/2004, de 5 de octubre, del Gobierno de Aragón, por el que se declara Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, Zona Paleontológica, el yacimiento denominado «La Puebla de Valverde», localizado en el término municipal de La Puebla de Valverde (Teruel).</p>"],
+        "web_content/Titulo":[
+          "Datación magnetoestratigráfica del yacimiento paleontológico de Puebla de Valverde (Teruel)"],
+        "web_content/Periodo":[
+          "Neógeno"],
+        "web_content/Referencia":[
+          "VI Congreso Geológico de España, Zaragoza, 12 al 15 de julio de 2004."],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Gúdar-Javalambre",
+          "La Puebla de Valverde",
+          "BIC",
+          "Cenozoico",
+          "Neógeno",
+          "Paleontología",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "La Puebla de Valverde"],
+        "web_content/Era":[
+          "Cenozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca de Gúdar-Javalambre"],
+        "web_content/Autor":[
+          "SINUSIA, C.; PUEYO, E.L., AZANZA, B. Y POCOVI, A"]},
+      {
+        "location":"41.3520621,-1.0369833",
+        "provincia":"ZARAGOZA",
+        "title":"Yacimiento El Paso",
+        "description":"Al Sur de Villanueva de Huerva, en Zaragoza,&nbsp; a lo largo de un barranco excavado por el río Huerva, se localiza el yacimiento de icnitas de dinosaurio de El Paso. El acceso al yacimiento se realiza siguiendo la carretera que une las localidades de Villanueva de Huerva y Aguilón.",
+        "title_string":"Yacimiento El Paso",
+        "content":"Yacimiento El Paso Villanueva De Huerva 001 Al Sur de Villanueva de Huerva, en Zaragoza,  a lo largo de un barranco excavado por el río Huerva, se localiza el yacimiento de icnitas de dinosaurio de El Paso. El acceso al yacimiento se realiza siguiendo la carretera que une las localidades de Villanueva de Huerva y Aguilón. Este yacimiento se halla geológicamente en estratos calizos del Cretácico Inferior (Valanginiense-Hauteriviense). Contiene dos huella de theropodo tridáctilas aisladas que se localizan dentro de una sucesión esencialmente calcárea constituida normalmente por calizas y margas alternantes, superpuesta a unos 100 metros de lutitas y areniscas de la misma unidad, y perteneciente al estratotipo de la Fm. Areniscas y Calizas de Villanueva de Huerva (Soria, 1997). 7999 Plaza San Antón, 1. 50153 Villanueva de Huerva (Zaragoza) Ayuntamiento de Villanueva de Huerva 976 143 401 1-PAL-ZAR-021-290-001 Comarca Campo de Cariñena http://www.campodecarinena.org/ Presence of two different theropod footprints in the Valanginian-Hauterivian (Lower Cretaceous) of Villanueva de Huerva (Zaragoza, Aragón, Spain) CANUDO, J. I., BARCO, J. L., CUENCA-BESCÓS, G. y RUIZ-OMEÑACA, J. I. Abstract Book-International Symposium on dinosaurs and other vertebrates Palaeoichnology, Oct. 2005.",
+        "municipio":"Villanueva de Huerva",
+        "web_content/Denominacion-principal":[
+          "Yacimiento El Paso"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\">Al Sur de Villanueva de Huerva, en Zaragoza,&nbsp; a lo largo de un barranco excavado por el río Huerva, se localiza el yacimiento de icnitas de dinosaurio de El Paso. El acceso al yacimiento se realiza siguiendo la carretera que une las localidades de Villanueva de Huerva y Aguilón. </p><p id=\"aui_3_2_0_19223\" align=\"justify\">Este yacimiento se halla geológicamente en estratos calizos del Cretácico Inferior (Valanginiense-Hauteriviense). Contiene dos huella de theropodo tridáctilas aisladas que se localizan dentro de una sucesión esencialmente calcárea constituida normalmente por calizas y margas alternantes, superpuesta a unos 100 metros de lutitas y areniscas de la misma unidad, y perteneciente al estratotipo de la Fm. Areniscas y Calizas de Villanueva de Huerva (Soria, 1997).</p><p align=\"justify\"></p>"],
+        "web_content/Titulo":[
+          "Presence of two different theropod footprints in the Valanginian-Hauterivian (Lower Cretaceous) of Villanueva de Huerva (Zaragoza, Aragón, Spain)"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Abstract Book-International Symposium on dinosaurs and other vertebrates Palaeoichnology, Oct. 2005."],
+        "assetCategoryNames":[
+          "ZARAGOZA",
+          "Campo de Cariñena",
+          "Villanueva de Huerva",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Villanueva de Huerva",
+          "Icnitas"],
+        "web_content/Denominacion-secundaria":[
+          "Villanueva De Huerva 001"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca Campo de Cariñena"],
+        "web_content/Autor":[
+          "CANUDO, J. I., BARCO, J. L., CUENCA-BESCÓS, G. y RUIZ-OMEÑACA, J. I."]},
+      {
+        "location":"40.5772929,-0.6942516",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de icnitas de dinosaurio Miravete 1 y 2",
+        "description":"En la localidad de Miravete de la Sierra de la Sierra se localiza un yacimiento de icnitas formado por dos niveles de huellas denominados Miravete 1 y Miravete 2.",
+        "title_string":"Yacimiento de icnitas de dinosaurio Miravete 1 y 2",
+        "content":"Yacimiento de icnitas de dinosaurio Miravete 1 y 2 Miravete 001 En la localidad de Miravete de la Sierra de la Sierra se localiza un yacimiento de icnitas formado por dos niveles de huellas denominados Miravete 1 y Miravete 2. Geológicamente se encuentran en estratos calizos de la parte media de la Fm. Villar del Arzobispo cuya edad se estima en torno al Tithónico-Berriasiense (Jurásico superior-Cretácico inferior). El yacimiento se ha encontrado dentro de la unidad estatigráfica Fm. Villar del Arzobispo. Las huellas se localizan en estratos de calizas micríticas. Según estudios realizados en este yacimiento no puede concretarse a que dinosaurios correspondes las huellas, si bien se observa que una de ellas puede ser, por sus características, de un Saurópodo y  diferente a los encontrados en Ababuj y en Aguilar de la Alfambra. Esta huella mide unos 30 cm. y presenta impresiones de dedos como las asignadas a los icnogéneros Brontodopus y Parabrontodopus. En Miravete 1 se han contabilizado 67 huellas, muchas de ellas incompletas, de distintas formas y tamaños por lo que se desconoce el número de individuos a los que pertenecen. Miravete 2 se han encontrado 6 huellas, 5 de ellas Saurópodas y una de un terópodo carnosaurio. El Boletín Oficial de Aragón del  día 12 de febrero de 2003 publica el decreto 20/2003, de 28 de enero, del Gobierno de Aragón, por el que se declaran bien de interés cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio localizados en la Comunidad Autónoma de Aragón entre los que se encuentra el yacimiento de Miravete 1 y 2. 8999 Plaza Mayor, 1. 44159 Miravete de la Sierra (Teruel) Ayuntamiento de Miravete de la Sierra 978 778 012 http://www.miravetedelasierra.es/ 1-PAL-TER-030-150-001 Aragosaurus. Grupo de investigación Universidad de Zaragoza http://www.aragosaurus.com/ Ayuntamiento Miravete de la Sierra http://www.miravetedelasierra.es/ Comarca del Maestrazgo http://www.comarcamaestrazgo.es/ Turismo por el Maestrazgo http://www.turismomaestrazgo.com Parque Cultural del Maestrazgo http://www.maestrazgo.org/pcm.htm",
+        "municipio":"Miravete de la Sierra",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de icnitas de dinosaurio Miravete 1 y 2"],
+        "web_content/Descripcion":[
+          "<p> En la localidad de Miravete de la Sierra de la Sierra se localiza un yacimiento de icnitas formado por dos niveles de huellas denominados Miravete 1 y Miravete 2. Geológicamente se encuentran en estratos calizos de la parte media de la Fm. Villar del Arzobispo cuya edad se estima en torno al Tithónico-Berriasiense (Jurásico superior-Cretácico inferior). El yacimiento se ha encontrado dentro de la unidad estatigráfica Fm. Villar del Arzobispo. Las huellas se localizan en estratos de calizas micríticas.</p> <p> Según estudios realizados en este yacimiento no puede concretarse a que dinosaurios correspondes las huellas, si bien se observa que una de ellas puede ser, por sus características, de un Saurópodo y&nbsp; diferente a los encontrados en Ababuj y en Aguilar de la Alfambra. Esta huella mide unos 30 cm. y presenta impresiones de dedos como las asignadas a los icnogéneros Brontodopus y Parabrontodopus.</p> <p> En Miravete 1 se han contabilizado 67 huellas, muchas de ellas incompletas, de distintas formas y tamaños por lo que se desconoce el número de individuos a los que pertenecen. Miravete 2 se han encontrado 6 huellas, 5 de ellas Saurópodas y una de un terópodo carnosaurio.</p> <p> El Boletín Oficial de Aragón del &nbsp;día 12 de febrero de 2003 publica el decreto 20/2003, de 28 de enero, del Gobierno de Aragón, por el que se declaran bien de interés cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio localizados en la Comunidad Autónoma de Aragón entre los que se encuentra el yacimiento de Miravete 1 y 2.</p>"],
+        "web_content/Periodo":[
+          "Jurásico"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Maestrazgo",
+          "Miravete de la Sierra",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Jurásico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Miravete de la Sierra",
+          "Icnitas"],
+        "web_content/Denominacion-secundaria":[
+          "Miravete 001"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Parque Cultural del Maestrazgo"]},
+      {
+        "location":"41.0301505,-0.5921202999999999",
+        "provincia":"TERUEL",
+        "title":"Icnitas de dinosaurio de Puente Escuriza",
+        "description":"<P>El Yacimiento de icnitas (huellas de dinosaurio fosilizadas) de Puente del Río Escuriza puede observarse en el camino de Ariño hacia Oliete (Teruel), y corresponde al Barremiense Superior (Cretácico Inferior), hace unos 120 millones de años.</P><P>",
+        "title_string":"Icnitas de dinosaurio de Puente Escuriza",
+        "content":"Icnitas de dinosaurio de Puente Escuriza Icnitas de dinosaurio de Puente Escuriza El Yacimiento de icnitas (huellas de dinosaurio fosilizadas) de Puente del Río Escuriza puede observarse en el camino de Ariño hacia Oliete (Teruel), y corresponde al Barremiense Superior (Cretácico Inferior), hace unos 120 millones de años. Contiene 61 icnitas que son denominadas subimpresiones, ya que las huellas no se produjeron directamente sobre la capa en la que afloran sino sobre otra actualmente erosionada. Se pueden diferenciar en tres grupos: el primero pertenece a los miembros delanteros de saurópodos; el segundo agrupa a huellas de miembros traseros de saurópodos; y el tercero, corresponde a huellas tridáctilas producidas por ornitópodos (dinosaurios herbívoros). Aunque actualmente el terreno, formado por calizas bioclásticas, está inclinado debido a los movimientos tectónicos, originalmente era una superficie plana, fangosa y húmeda sobre la que los dinosaurios dejaron sus huellas, posiblemente mientras se alimentaban, ya que son aleatorias y e aprecian conchas de ostras en la base donde pisaron estos grandes saurios. Este proceso de se denomina dinoturbación. El yacimiento puede ser visitado in situ, y muy próximo se ubica el Centro de Arte Rupestre \"Antonio Beltrán\" del Parque Cultural del Río Martín, donde puede conseguirse más información. Ayuntamiento de Ariño Plaza Mayor, 2. 44547 Ariño, Teruel 978 81 71 31 Fundación Conjunto Paleontológico de Teruel-Dinópolis http://www.fundaciondinopolis.org/ Turismo de Andorra Sierra de Arcos http://www.turismoandorrasierradearcos.com/pueblos_arino.php Parque Cultural del Río Martín http://www.parqueriomartin.com/arino.php",
+        "municipio":"Ariño",
+        "web_content/Denominacion-principal":[
+          "Icnitas de dinosaurio de Puente Escuriza"],
+        "web_content/Descripcion":[
+          "<p> El Yacimiento de icnitas (huellas de dinosaurio fosilizadas) de Puente del Río Escuriza puede observarse en el camino de Ariño hacia Oliete (Teruel), y corresponde al Barremiense Superior (Cretácico Inferior), hace unos 120 millones de años.</p> <p> Contiene 61 icnitas que son denominadas subimpresiones, ya que las huellas no se produjeron directamente sobre la capa en la que afloran sino sobre otra actualmente erosionada. Se pueden diferenciar en tres grupos: el primero pertenece a los miembros delanteros de saurópodos; el segundo agrupa a huellas de miembros traseros de saurópodos; y el tercero, corresponde a huellas tridáctilas producidas por ornitópodos (dinosaurios herbívoros).</p> <p> Aunque actualmente el terreno, formado por calizas bioclásticas, está inclinado debido a los movimientos tectónicos, originalmente era una superficie plana, fangosa y húmeda sobre la que los dinosaurios dejaron sus huellas, posiblemente mientras se alimentaban, ya que son aleatorias y e aprecian conchas de ostras en la base donde pisaron estos grandes saurios. Este proceso de se denomina dinoturbación.</p> <p> El yacimiento puede ser visitado in situ, y muy próximo se ubica el Centro de Arte Rupestre \"Antonio Beltrán\" del Parque Cultural del Río Martín, donde puede conseguirse más información.</p>"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=5d1de62b-98ad-4ece-ad5d-5304d645dfa8&groupId=10157&t=1318928228761"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Andorra-Sierra de Arcos",
+          "Ariño",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Ariño",
+          "Icnitas"],
+        "web_content/Denominacion-secundaria":[
+          "Icnitas de dinosaurio de Puente Escuriza"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Parque Cultural del Río Martín"]},
+      {
+        "location":"40.5484614,-0.8077833",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de icnitas de Ababuj",
+        "description":"<P>El yacimiento de icnitas de Ababuj está situado en la carretera que une Ababuj con Aguilar del Alfambra, Se han obtenido unas 25 huellas, de las que 20 tienen forma ovalada atribuibles a saurópodos. Además existen 5 huellas tridáctilas terópodos, localizadas en las capas de ambos lados de la carretera. </P><P>Contiene huellas de dinosaurio fosilizadas&nbsp;aisladas, aunque algunas de ellas pueden pertenecer al rastro de un mismo individuo. La mayoría tiene forma ovalada o subelíptica. Muestr",
+        "title_string":"Yacimiento de icnitas de Ababuj",
+        "content":"Yacimiento de icnitas de Ababuj El yacimiento de icnitas de Ababuj está situado en la carretera que une Ababuj con Aguilar del Alfambra, Se han obtenido unas 25 huellas, de las que 20 tienen forma ovalada atribuibles a saurópodos. Además existen 5 huellas tridáctilas terópodos, localizadas en las capas de ambos lados de la carretera. Contiene huellas de dinosaurio fosilizadas aisladas, aunque algunas de ellas pueden pertenecer al rastro de un mismo individuo. La mayoría tiene forma ovalada o subelíptica. Muestran variedad en sus dimensiones, lo cual indica una diversidad de tamaños de individuos y/o las circunstancias en el momento de producirse la pisada. En algunas, la impresión está bordeada por un anillo de \"barro salpicado\" producto del impacto del animal al pisar sobre el suelo fangoso. No se conocen muchos yacimientos de icnitas con morfología ovalada, generalmente atribuídas a saurópodos. Las icnitas de Ababuj se encuentran al menos en dos niveles del conjunto Jurásico Superior. La forma de las icnitas podría sugerir su pertenencia a individuos de un mismo tipo. Pero debe tenerse en cuenta que están distribuídas al menos en tres capas y puede ser más probable sugerir especies coexistentes. En las cercanías de Aguilar del Alfambra, en un nivel similar al que contiene las descritas de Ababuj, se halla otro conjunto de huellas ovaladas, que se encuentran en una capa casi vertical de muy difícil acceso. Estas huellas de Ababuj son similares a las de Barkhausen (Alemania), ambas del Jurásico Superior. También se corresponden con las encontradas en Los Cayos (La Rioja) y Morrison (EEUU). El Boletín Oficial de Aragón del día 12 de febrero de 2003 publica el Decreto 20/2003, de 28 de enero, del Gobierno de Aragón, por el que se declaran bien de interés cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio localizados en la Comunidad Autónoma de Aragón, entre los que se encuentra el localizado en Ababuj. 7999 C/ Iglesia, 8. 44155 Ababuj (Teruel) Ayuntamiento de Ababuj Comarca Comunidad de Teruel http://www.comarcateruel.es/",
+        "municipio":"Ababuj",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de icnitas de Ababuj"],
+        "web_content/Descripcion":[
+          "<p id=\"aui_3_2_0_19406\"> El yacimiento de icnitas de Ababuj está situado en la carretera que une Ababuj con Aguilar del Alfambra, Se han obtenido unas 25 huellas, de las que 20 tienen forma ovalada atribuibles a saurópodos. Además existen 5 huellas tridáctilas terópodos, localizadas en las capas de ambos lados de la carretera.</p> <p id=\"aui_3_2_0_19411\"> Contiene huellas de dinosaurio fosilizadas&nbsp;aisladas, aunque algunas de ellas pueden pertenecer al rastro de un mismo individuo. La mayoría tiene forma ovalada o subelíptica. Muestran variedad en sus dimensiones, lo cual indica una diversidad de tamaños de individuos y/o las circunstancias en el momento de producirse la pisada. En algunas, la impresión está bordeada por un anillo de \"barro salpicado\" producto del impacto del animal al pisar sobre el suelo fangoso. No se conocen muchos yacimientos de icnitas con morfología ovalada, generalmente atribuídas a saurópodos.</p> <p id=\"aui_3_2_0_19705\"> Las icnitas de Ababuj se encuentran al menos en dos niveles del conjunto Jurásico Superior. La forma de las icnitas podría sugerir su pertenencia a individuos de un mismo tipo. Pero debe tenerse en cuenta que están distribuídas al menos en tres capas y puede ser más probable sugerir especies coexistentes. En las cercanías de Aguilar del Alfambra, en un nivel similar al que contiene las descritas de Ababuj, se halla otro conjunto de huellas ovaladas, que se encuentran en una capa casi vertical de muy difícil acceso.</p> <p id=\"aui_3_2_0_19710\"> Estas huellas de Ababuj son similares a las de Barkhausen (Alemania), ambas del Jurásico Superior. También se corresponden con las encontradas en Los Cayos (La Rioja) y Morrison (EEUU).</p> <p> El Boletín Oficial de Aragón del día 12 de febrero de 2003 publica el Decreto 20/2003, de 28 de enero, del Gobierno de Aragón, por el que se declaran bien de interés cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio localizados en la Comunidad Autónoma de Aragón, entre los que se encuentra el localizado en Ababuj.</p>"],
+        "web_content/Periodo":[
+          "Jurásico"],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=5df93715-6173-4778-b00f-abc431fdb473&groupId=10157&t=1318928234885",
+          "/image/image_gallery?uuid=7778c3c6-c8e0-4857-a8cf-0b7d20866baf&groupId=10157&t=1318928235143",
+          "/image/image_gallery?uuid=8d34d70f-7ddb-4b63-b03c-a8f056e8fe47&groupId=10157&t=1318928235515"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Ababuj",
+          "BIC",
+          "Mesozoico",
+          "Jurásico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Ababuj",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca Comunidad de Teruel"]},
+      {
+        "location":"40.65557210000001,-0.8808522",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de Los Corrales del Pelejón",
+        "description":"El yacimiento &#8220;Los Corrales del Pelejón&#8221;&nbsp;pertenece al conjunto de Galve (Teruel), que está considerado como una importante referencia a nivel mundial. Las icnitas se han situado en una formación de la edad Hauteriviense terminal-Barremiense basal",
+        "title_string":"Yacimiento de Los Corrales del Pelejón",
+        "content":"Yacimiento de Los Corrales del Pelejón El yacimiento \"Los Corrales del Pelejón\" pertenece al conjunto de Galve (Teruel), que está considerado como una importante referencia a nivel mundial. Las icnitas se han situado en una formación de la edad Hauteriviense terminal-Barremiense basal. Su descubrimiento se remonta a la década de los 50, cuando José María Herrero encontró cinco huellas de dinosaurio que son conocidas como \"Huellas del Pelejón\". A partir de este hallazgo, la Diputación General de Aragón ha realizado diversas tareas de limpieza y protección, en las que han producido nuevos hallazgos: 35 icnitas que hacen que este yacimiento sea singular en Aragón. En el yacimiento hay un total de 40 icnitas. Las huellas pertenecen a diversas especies de dinosaurios: Terópodos Carnosaurio  (carnívoros de gran tamaño), Terópodos Coelurosaurios (carnívoros de pequeño tamaño) y Ornitópodos (dinosaurios herbívoros). Todas las huellas son tridácticas, es decir, tienen tres dedos, y la mayoría están agrupadas en 7 rastros. 4999 Plaza Mayor, 1. 44168, Galve (Teruel) Ayuntamiento de Galve - Oficina de Información y Turismo 978 776 029 1-PAL-TER-029-115-002 Comarca Comunidad de Teruel http://www.comarcateruel.es/",
+        "municipio":"Galve",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de Los Corrales del Pelejón"],
+        "web_content/Descripcion":[
+          "<p> El yacimiento \"Los Corrales del Pelejón\"&nbsp;pertenece al conjunto de Galve (Teruel), que está considerado como una importante referencia a nivel mundial. Las icnitas se han situado en una formación de la edad Hauteriviense terminal-Barremiense basal.</p> <p> Su descubrimiento se remonta a la década de los 50, cuando José María Herrero encontró cinco huellas de dinosaurio que son conocidas como \"Huellas del Pelejón\". A partir de este hallazgo, <personname productid=\"la Diputación General\" w:st=\"on\">la Diputación General</personname> de Aragón ha realizado diversas tareas de limpieza y protección, en las que han producido nuevos hallazgos: 35 icnitas que hacen que este yacimiento sea singular en Aragón.</p> <p> En el yacimiento hay un total de 40 icnitas. Las huellas pertenecen a diversas especies de dinosaurios: Terópodos Carnosaurio&nbsp; (carnívoros de gran tamaño),&nbsp;Terópodos Coelurosaurios (carnívoros de pequeño tamaño) y Ornitópodos (dinosaurios herbívoros). Todas las huellas son tridácticas, es decir, tienen tres dedos, y la mayoría están agrupadas en 7 rastros.</p>"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=40ed5e83-006a-44eb-8f21-23f302a9f28c&groupId=10157&t=1318929319119"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Galve",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Galve",
+          "Dinosaurios",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca Comunidad de Teruel"]},
+      {
+        "location":"40.65557210000001,-0.8808522",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de El Cantalar",
+        "description":"La localidad de Galve posee numerosos yacimientos de icnitas de dinosaurio. El yacimiento de El Cantalar se sitúa en el camino que recorre la ribera del río Alfambra. Se localiza en la parte superior de una areniscosa con cemento calcáreo.",
+        "title_string":"Yacimiento de El Cantalar",
+        "content":"Yacimiento de El Cantalar La localidad de Galve posee numerosos yacimientos de icnitas de dinosaurio. El yacimiento de El Cantalar se sitúa en el camino que recorre la ribera del río Alfambra. Se localiza en la parte superior de una areniscosa con cemento calcáreo. La posición estratigráfica de éste correspondería con la Fm. Villar del Arzobispo de edad Titónico -Berrriasiense. En este yacimiento se conoce la existencia de 11 huellas, 6 marcas de pie y 5 marcas de mano de un vertebrado cuadrúpedo. La identificación de este cuadrúpedo está todavía en estudio. 7999 Plaza Mayor, 1. 44168, Galve (Teruel) Ayuntamiento de Galve - Oficina de Información y Turismo 978 776 029 1-PAL-TER-029-115-034 Comarca Comunidad de Teruel http://www.comarcateruel.es/ Los dinosaurios de la Formación Villar del Arzobispo (Titónico medio - Berrriasiense inferior) en Galve (Teruel) CANUDO, J. I.; BARCO, J. L.; CUENCA-BESCÓS, G., RUIZ-OMEÑACA, J.L; AURELL CARDONA, M.: Geogaceta, Nº. 38, 2005, pp. 39-42.",
+        "municipio":"Galve",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de El Cantalar"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> La localidad de Galve posee numerosos yacimientos de icnitas de dinosaurio. El yacimiento de El Cantalar se sitúa en el camino que recorre la ribera del río Alfambra. Se localiza en la parte superior de una areniscosa con cemento calcáreo. La posición estratigráfica de éste correspondería con la Fm. Villar del Arzobispo de edad Titónico -Berrriasiense.</p> <p align=\"justify\"> En este yacimiento se&nbsp;conoce la existencia de 11 huellas, 6 marcas de pie y 5 marcas de mano de un vertebrado cuadrúpedo. La identificación de este cuadrúpedo está todavía en estudio.</p>"],
+        "web_content/Titulo":[
+          "Los dinosaurios de la Formación Villar del Arzobispo (Titónico medio - Berrriasiense inferior) en Galve (Teruel)"],
+        "web_content/Periodo":[
+          "Jurásico"],
+        "web_content/Referencia":[
+          "Geogaceta, Nº. 38, 2005, pp. 39-42."],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Galve",
+          "BIC",
+          "Mesozoico",
+          "Jurásico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Galve",
+          "Dinosaurios",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca Comunidad de Teruel"],
+        "web_content/Autor":[
+          "CANUDO, J. I.; BARCO, J. L.; CUENCA-BESCÓS, G.,  RUIZ-OMEÑACA, J.L;  AURELL CARDONA, M.:"]},
+      {
+        "location":"40.65557210000001,-0.8808522",
+        "provincia":"TERUEL",
+        "title":"Yacimiento Barranco de Luca",
+        "description":"El yacimiento de icnitas del &#8220;Barranco de Luca&#8221; pertenece al conjunto de Galve (Teruel), considerado como uno de los enclaves paleontológicos más importantes y relevantes del panorama internacional.",
+        "title_string":"Yacimiento Barranco de Luca",
+        "content":"Yacimiento Barranco de Luca El yacimiento de icnitas del \"Barranco de Luca\" pertenece al conjunto de Galve (Teruel), considerado como uno de los enclaves paleontológicos más importantes y relevantes del panorama internacional. La edad del yacimiento de Barranco Luca se sitúa en el Jurásico superior y corresponde a los fósiles de saurópodos más antiguos que se conocen en Galve. Este yacimiento contiene un total de 66 huellas fosilizadas de dinosario del tipo saurópodo, repartidas en dos afloramientos. Se aprecian pares pie-mano que corresponden probablemente al icnogénero Brontopodus. Destaca una serie de pisadas realizadas por seis dinosaurios saurópodos, en este caso de gran tamaño, cuya edad se remonta a finales del Jurásico e inicios del Cretácico. 7999 Plaza Mayor, 1. 44168, Galve (Teruel) Ayuntamiento de Galve - Oficina de Información y Turismo 978 776 029 1-PAL-TER-029-115-033 Comarca Comunidad de Teruel http://www.comarcateruel.es/ www.turismomaestrazgo.com http://www.turismomaestrazgo.com",
+        "municipio":"Galve",
+        "web_content/Denominacion-principal":[
+          "Yacimiento Barranco de Luca"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> El yacimiento de icnitas del \"Barranco de Luca\" pertenece al conjunto de Galve (Teruel), considerado como uno de los enclaves paleontológicos más importantes y relevantes del panorama internacional. La edad del yacimiento de Barranco Luca se sitúa en el Jurásico superior y corresponde a los fósiles de saurópodos más antiguos que se conocen en Galve.</p> <p align=\"justify\"> Este yacimiento contiene un total de 66 huellas fosilizadas de dinosario del tipo saurópodo, repartidas en dos afloramientos. Se aprecian pares pie-mano que corresponden probablemente al icnogénero Brontopodus.</p> <p align=\"justify\"> Destaca una serie de pisadas realizadas por seis dinosaurios saurópodos, en este caso de gran tamaño, cuya edad se remonta a finales del Jurásico e inicios del Cretácico.</p>"],
+        "web_content/Periodo":[
+          "Jurásico"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Galve",
+          "BIC",
+          "Mesozoico",
+          "Jurásico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Galve",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "www.turismomaestrazgo.com"]},
+      {
+        "location":"40.65557210000001,-0.8808522",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de Ríos Bajos",
+        "description":"La localidad de Galve&nbsp; cuenta con varios yacimientos paleontológicos con huellas que dinosaurios dejaron sobre llanuras encharcadas durante el Cretácico. Uno de estos yacimientos es el de icnitas de Ríos Bajos situado en el camino de llegada a Galve que discurre por el río Alfambra",
+        "title_string":"Yacimiento de Ríos Bajos",
+        "content":"Yacimiento de Ríos Bajos La localidad de Galve  cuenta con varios yacimientos paleontológicos con huellas que dinosaurios dejaron sobre llanuras encharcadas durante el Cretácico. Uno de estos yacimientos es el de icnitas de Ríos Bajos situado en el camino de llegada a Galve que discurre por el río Alfambra. El yacimiento de Ríos Bajos se encuentra sobre calizas de techo irregular y su estatigrafía permite considerarlo el yacimiento de huellas de dinosaurio más antiguo de la provincia de Teruel, ya que se enmarca dentro del Jurásico Superior. Las huellas fueron estudiadas por Félix Pérez Lorente. Contabilizó un total de 9 huellas, tridáctilas, con marcas de dedos alargados y separados, de terminación acuminada. Se establece así que pertenecen al grupo de icnitas terópodas carnosaurias. Una de las marcas demuestra que el dinosaurio avanzaba con andar plantígrado, lo que hace de estas icnitas un grupo muy escaso y sin referencia en Aragón. 8999 Plaza Mayor, 1. 44168, Galve (Teruel) Ayuntamiento de Galve - Oficina de Información y Turismo 978 776 029 1-PAL-TER-029-115-045 Comarca Comunidad de Teruel http://www.comarcateruel.es/",
+        "municipio":"Galve",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de Ríos Bajos"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> La localidad de Galve&nbsp; cuenta con varios yacimientos paleontológicos con huellas que dinosaurios dejaron sobre llanuras encharcadas durante el Cretácico. Uno de estos yacimientos es el de icnitas de Ríos Bajos situado en el camino de llegada a Galve que discurre por el río Alfambra.</p> <p align=\"justify\"> El yacimiento de Ríos Bajos se encuentra sobre calizas de techo irregular y su estatigrafía permite considerarlo el yacimiento de huellas de dinosaurio más antiguo de la provincia de Teruel, ya que se enmarca dentro del Jurásico Superior.</p> <p align=\"justify\"> Las huellas fueron estudiadas por Félix Pérez Lorente. Contabilizó un total de 9 huellas, tridáctilas, con marcas de dedos alargados y separados, de terminación acuminada. Se establece así que pertenecen al grupo de icnitas terópodas carnosaurias. Una de las marcas demuestra que el dinosaurio avanzaba con andar plantígrado, lo que hace de estas icnitas un grupo muy escaso y sin referencia en Aragón.</p>"],
+        "web_content/Periodo":[
+          "Jurásico"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Galve",
+          "BIC",
+          "Mesozoico",
+          "Jurásico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Galve",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca Comunidad de Teruel"]},
+      {
+        "location":"40.3652427,-0.8173128",
+        "provincia":"TERUEL",
+        "title":"Yacimiento Paleoicnológico de El Pozo",
+        "description":"El yacimiento de icnitas de El Pozo se encuentra al norte de la carretera que enlaza el núcleo de El Castellar con Formiche Alto, a unos 50 metros de la calzada",
+        "title_string":"Yacimiento Paleoicnológico de El Pozo",
+        "content":"Yacimiento Paleoicnológico de El Pozo El yacimiento de icnitas de El Pozo se encuentra al norte de la carretera que enlaza el núcleo de El Castellar con Formiche Alto, a unos 50 metros de la calzada.  El yacimiento está compuesto por diferentes estratos calizos con huellas y una posición estratigráfica correspondiente posiblemente con la Formación Villar del Arzobispo, de edad Titónico-Berriasiense (Jurásico superior-Cretácico inferior). Las huellas se distribuyen sobre una extensión total de más de 500 metros cuadrados, aunque se pueden diferenciar dos zonas. Una inferior y principal en la que se observan muy nítidamente dos huellas en forma de medialuna y otras dos de gran tamaño de forma ovalada, situadas en una superficie de unos 77 metros cuadrados. Las primeras son atribuidas a manos de saurópodo y las segundas a pies, probablemente del mismo individuo. En las manos se presenta un gran reborde en comparación con los pies. Las manos tienen unas dimensiones aproximadas de 55 x 45 cm. y los pies de hasta 80 x 60 cm. En un estrato calizo inmediatamente superior de unos 20 cm. de grosor se pueden observar más huellas de saurópodo, pero en este caso, las impresiones no son tan nítidas, por lo que probablemente sean atribuibles a subhuellas. La longitud del yacimiento es de unos 11 metros y sus medidas de dirección y buzamiento son 242º/5º. A unos 20 metros al noroeste se encuentran otras tres huellas ovaladas, atribuibles también a pies de saurópodo. Tienen entre 60 y 70 cm. de diámetro mayor. Esta parte del yacimiento tiene una superficie de unos 10 metros cuadrados (4 metros de largo y 2,50 de ancho) siendo los datos de dirección y buzamiento de la capa de 217º/15º. Entre ambas zonas y en un terreno altamente erosionado y desmenuzado se encuentran algunas icnitas, destacando una tridáctila de pequeñas dimensiones. El Boletín Oficial de Aragón del día 11 de febrero de 2004 publica el Decreto 18/2004, de 27 de enero, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio, localizados en el término municipal de el Castellar (Teruel), entre los que se encuentra el Yacimiento de icnitas de dinosaurio de El Pozo. Entre los años 2006 y 2008 la Escuela Taller de Restauración Paleontológica II realizó trabajos de restauración y consolidación del yacimiento que consistieron en la limpieza y adhesión de fragmentos así como el relleno de grietas. El Gobierno de Aragón y el INAEM fueron los promotores de estos trabajos que contaron con un presupuesto de 28.000 euros y que estuvieron bajo la dirección de obra de la Fundación Conjunto Paleontológico de Teruel-Dinópolis. 8999 Plaza Mayor, 3. 44409 El Castellar (Teruel) Ayuntamiento de El Castellar 978 800 188 Comarca de Gúdar-Javalambre http://www.gudarjavalambre.es/ Aragón Patrimonio Cultural Restaurado. 1984/2009. Bienes inmuebles MÉNDEZ DE JUAN, JOSÉ FÉLIX, GALINDO PÉREZ, SILVIA Y LASHERAS RODRÍGUEZ, JAVIER Gobierno de Aragón, Zaragoza, 2010.",
+        "municipio":"El Castellar",
+        "web_content/Denominacion-principal":[
+          "Yacimiento Paleoicnológico de El Pozo"],
+        "web_content/Descripcion":[
+          "<p id=\"aui_3_2_0_19733\"> El yacimiento de icnitas de El Pozo se encuentra al norte de la carretera que enlaza el núcleo de El Castellar con Formiche Alto, a unos 50 metros de la calzada.&nbsp;</p> <p id=\"aui_3_2_0_19509\"> El yacimiento está compuesto por diferentes estratos calizos con huellas y una posición estratigráfica correspondiente posiblemente con la Formación Villar del Arzobispo, de edad Titónico-Berriasiense (Jurásico superior-Cretácico inferior).</p> <p> Las huellas se distribuyen sobre una extensión total de más de 500 metros cuadrados, aunque se pueden diferenciar dos zonas. Una inferior y principal en la que se observan muy nítidamente dos huellas en forma de medialuna y otras dos de gran tamaño de forma ovalada, situadas en una superficie de unos 77 metros cuadrados. Las primeras son atribuidas a manos de saurópodo y las segundas a pies, probablemente del mismo individuo. En las manos se presenta un gran reborde en comparación con los pies. Las manos tienen unas dimensiones aproximadas de 55 x 45 cm. y los pies de hasta 80 x 60 cm. En un estrato calizo inmediatamente superior de unos 20 cm. de grosor se pueden observar más huellas de saurópodo, pero en este caso, las impresiones no son tan nítidas, por lo que probablemente sean atribuibles a subhuellas. La longitud del yacimiento es de unos 11 metros y sus medidas de dirección y buzamiento son 242º/5º.</p> <p> A unos 20 metros al noroeste se encuentran otras tres huellas ovaladas, atribuibles también a pies de saurópodo. Tienen entre 60 y 70 cm. de diámetro mayor. Esta parte del yacimiento tiene una superficie de unos 10 metros cuadrados (4 metros de largo y 2,50 de ancho) siendo los datos de dirección y buzamiento de la capa de 217º/15º.</p> <p> Entre ambas zonas y en un terreno altamente erosionado y desmenuzado se encuentran algunas icnitas, destacando una tridáctila de pequeñas dimensiones.</p> <p> El Boletín Oficial de Aragón del día 11 de febrero de 2004 publica el Decreto&nbsp;18/2004, de 27 de enero, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio, localizados en el término municipal de el Castellar (Teruel), entre los que se encuentra el Yacimiento&nbsp;de icnitas de dinosaurio de El Pozo.</p> <p> Entre los años 2006 y 2008 la Escuela Taller de Restauración Paleontológica II realizó trabajos de restauración y consolidación del yacimiento que consistieron en la limpieza y adhesión de fragmentos así como el relleno de grietas. El Gobierno de Aragón y el INAEM fueron los promotores de estos trabajos que contaron con un presupuesto de 28.000 euros y que estuvieron bajo la dirección de obra de la Fundación Conjunto Paleontológico de Teruel-Dinópolis.</p>"],
+        "web_content/Titulo":[
+          "Aragón Patrimonio Cultural Restaurado. 1984/2009. Bienes inmuebles"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón, Zaragoza, 2010."],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=fbc70e14-a839-4931-88e1-e91cd830524d&groupId=10157&t=1318930600129",
+          "/image/image_gallery?uuid=98eb71e3-6ef0-4565-8775-2cba1b7cb225&groupId=10157&t=1318930600447"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Gúdar-Javalambre",
+          "El Castellar",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "El Castellar",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca de Gúdar-Javalambre"],
+        "web_content/Autor":[
+          "MÉNDEZ DE JUAN, JOSÉ FÉLIX, GALINDO PÉREZ, SILVIA Y LASHERAS RODRÍGUEZ, JAVIER"]},
+      {
+        "location":"40.3652427,-0.8173128",
+        "provincia":"TERUEL",
+        "title":"Camino el Berzal",
+        "description":"El yacimiento de Icnitas de Camino El Berzal se halla al norte de la carretera que enlaza El Castellar con Formiche Alto, a más de 200 metros al norte de la calzada.",
+        "title_string":"Camino el Berzal",
+        "content":"Camino el Berzal El yacimiento de Icnitas de Camino El Berzal se halla al norte de la carretera que enlaza El Castellar con Formiche Alto, a más de 200 metros al norte de la calzada. El yacimiento se localiza en el techo de un estrato calizo que se corresponde posiblemente con la Formación Villar del Arzobispo, de edad Titónico-Berriasiense (Jurásico superior-Cretácico inferior). La dirección y buzamiento del estrato mencionado es 298º/13º. La extensión del yacimiento es de unos 30 metros cuadrados, aunque en las zonas limítrofes y ya en el camino desde la carretera, se pueden ver diferentes huellas ovaladas (poco marcadas). El yacimiento tiene una gran concentración de icnitas, todas ellas ovaladas, de diferentes tamaños y que pueden atribuirse a saurópodos. Se diferencian las huellas de las extremidades delanteras y de las traseras pero no se observan rastros claros por lo que parece tratarse de una dinoturbación de icnitas de saurópodos. Las más grandes tienen un diámetro mayor de entre 1,10 y 1,20 metros, mientras que el de otras se sitúa en torno a 55 cm. El Boletín Oficial de Aragón del día 11 de febrero de 2004 publica el Decreto 18/2004, de 27 de enero, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio, localizados en el término municipal de el Castellar (Teruel), entre los que se encuentra el Yacimiento de icnitas de dinosaurio de Camino El Berzal. Entre los años 2008 y 2010 la Escuela Taller de Restauración Paleontológica III realizó trabajos de restauración y consolidación del yacimiento que consistieron en la limpieza de vegetación y la adhesión de fragmentos así como el relleno de grietas mediante la aplicación de mortero. El Gobierno de Aragón y el INAEM fueron los promotores de estos trabajos que contaron con un presupuesto de 30.000 euros. 8999 Plaza Mayor, 3. 44409 El Castellar (Teruel) Ayuntamiento de El Castellar 978 800 188 Comarca de Gúdar-Javalambre http://www.gudarjavalambre.es/ Aragón Patrimonio Cultural Restaurado. 1984/2009. Bienes inmuebles MÉNDEZ DE JUAN, JOSÉ FÉLIX, GALINDO PÉREZ, SILVIA Y LASHERAS RODRÍGUEZ, JAVIER Gobierno de Aragón, Zaragoza, 2010.",
+        "municipio":"El Castellar",
+        "web_content/Denominacion-principal":[
+          "Camino el Berzal"],
+        "web_content/Descripcion":[
+          "<p> El yacimiento de Icnitas de Camino El Berzal se halla al norte de la carretera que enlaza El Castellar con Formiche Alto, a más de 200 metros al norte de la calzada.</p> <p> El yacimiento se localiza en el techo de un estrato calizo que se corresponde posiblemente con la Formación Villar del Arzobispo, de edad Titónico-Berriasiense (Jurásico superior-Cretácico inferior). La dirección y buzamiento del estrato mencionado es 298º/13º.</p> <p> La extensión del yacimiento es de unos 30 metros cuadrados, aunque en las zonas limítrofes y ya en el camino desde la carretera, se pueden ver diferentes huellas ovaladas (poco marcadas). El yacimiento tiene una gran concentración de icnitas, todas ellas ovaladas, de diferentes tamaños y que pueden atribuirse a saurópodos. Se diferencian las huellas de las extremidades delanteras y de las traseras pero no se observan rastros claros por lo que parece tratarse de una dinoturbación de icnitas de saurópodos. Las más grandes tienen un diámetro mayor de entre 1,10 y 1,20 metros, mientras que el de otras se sitúa en torno a 55 cm.</p> <p> El Boletín Oficial de Aragón del día 11 de febrero de 2004 publica el Decreto 18/2004, de 27 de enero, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio, localizados en el término municipal de el Castellar (Teruel), entre los que se encuentra el Yacimiento de icnitas de dinosaurio de Camino El Berzal.</p> <p> Entre los años 2008 y 2010 la Escuela Taller de Restauración Paleontológica III realizó trabajos de restauración y consolidación del yacimiento que consistieron en la limpieza de vegetación y la adhesión de fragmentos así como el relleno de grietas mediante la aplicación de mortero. El Gobierno de Aragón y el INAEM fueron los promotores de estos trabajos que contaron con un presupuesto de 30.000 euros.</p>"],
+        "web_content/Titulo":[
+          "Aragón Patrimonio Cultural Restaurado. 1984/2009. Bienes inmuebles"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón, Zaragoza, 2010."],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Gúdar-Javalambre",
+          "El Castellar",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "El Castellar",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca de Gúdar-Javalambre"],
+        "web_content/Autor":[
+          "MÉNDEZ DE JUAN, JOSÉ FÉLIX, GALINDO PÉREZ, SILVIA Y LASHERAS RODRÍGUEZ, JAVIER"]},
+      {
+        "location":"40.3652427,-0.8173128",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de El Hoyo",
+        "description":"El yacimiento de icnitas de El Hoyo se halla a cierta distancia de la población, a 200 metros de la Masía del Hoyo, dirección sur, en un barranco.",
+        "title_string":"Yacimiento de El Hoyo",
+        "content":"Yacimiento de El Hoyo El yacimiento de icnitas de El Hoyo se halla a cierta distancia de la población, a 200 metros de la Masía del Hoyo, dirección sur, en un barranco. Estratigráficamente, las descripciones del Mapa Geológico de España a escala 1:50.000 (hoja 568, Alcalá de la Selva) y la litología del yacimiento (niveles duros de areniscas rojas y niveles blandos de arcillas rojas), indican una asignación como Facies Weald, de edad Neocomiense-Barremiense. Por comparación con otras áreas descritas equivaldría a la Formación Castellar o Formación Camarillas, de edad Barremiense. Las capas corresponden a depósitos de extensas llanuras lutíticas surcadas esporádicamente por canales y donde se pueden instalar áreas encharcadas generando medios palustres y lacustres. El yacimiento se sitúa en un barranco y ha sido puesto al descubierto por el agua de escorrentía. El nivel con huellas es un estrato masivo de areniscas rojas con bioturbación a techo producida por invertebrados y dinosaurios, siendo su dirección y buzamiento de 88º/15º. Se reconocen dos rastros paralelos separados 4,8 metros entre sí y ambos con dirección aparente N190ºE. La superficie del estrato donde se sitúan las huellas es de unos 20 metros cuadrados (10 metros de longitud y entre 1,90 y 2,70 metros de anchura). Las huellas son tridáctilas; se reconocen los dedos segundo, tercero (el mayor) y cuarto. Los dedos muestran entre sí morfología de V muy abierta y son acuminados. El tamaño de la huella varía de 17 a 25 cm. Uno de los rastros está formado por cuatro huellas de pie, mientras que en el otro sólo afloran dos; en cada rastro las huellas se separan entre sí de 40 a 60 cm. Por todos los datos anteriores las huellas son atribuidas en una asignación preliminar a marcas dejadas por los pies de un dinosaurio bípedo terópodo y, por su tamaño, posiblemente pertenezcan a Coelurosauria indeterminado. 8999 Plaza Mayor, 3. 44409 El Castellar (Teruel) Ayuntamiento de El Castellar 978 800 188 Comarca de Gúdar-Javalambre http://www.gudarjavalambre.es/",
+        "municipio":"El Castellar",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de El Hoyo"],
+        "web_content/Descripcion":[
+          "<p> El yacimiento de icnitas de El Hoyo se halla a cierta distancia de la población, a 200 metros de la Masía del Hoyo, dirección sur, en un barranco.</p> <p> Estratigráficamente, las descripciones del Mapa Geológico de España a escala 1:50.000 (hoja 568, Alcalá de la Selva) y la litología del yacimiento (niveles duros de areniscas rojas y niveles blandos de arcillas rojas), indican una asignación como Facies Weald, de edad Neocomiense-Barremiense. Por comparación con otras áreas descritas equivaldría a la Formación Castellar o Formación Camarillas, de edad Barremiense. Las capas corresponden a depósitos de extensas llanuras lutíticas surcadas esporádicamente por canales y donde se pueden instalar áreas encharcadas generando medios palustres y lacustres. El yacimiento se sitúa en un barranco y ha sido puesto al descubierto por el agua de escorrentía. El nivel con huellas es un estrato masivo de areniscas rojas con bioturbación a techo producida por invertebrados y dinosaurios, siendo su dirección y buzamiento de 88º/15º.</p> <p> Se reconocen dos rastros paralelos separados 4,8 metros entre sí y ambos con dirección aparente N190ºE. La superficie del estrato donde se sitúan las huellas es de unos 20 metros cuadrados (10 metros de longitud y entre 1,90 y 2,70 metros de anchura). Las huellas son tridáctilas; se reconocen los dedos segundo, tercero (el mayor) y cuarto. Los dedos muestran entre sí morfología de V muy abierta y son acuminados. El tamaño de la huella varía de 17 a 25 cm. Uno de los rastros está formado por cuatro huellas de pie, mientras que en el otro sólo afloran dos; en cada rastro las huellas se separan entre sí de 40 a 60 cm. Por todos los datos anteriores las huellas son atribuidas en una asignación preliminar a marcas dejadas por los pies de un dinosaurio bípedo terópodo y, por su tamaño, posiblemente pertenezcan a Coelurosauria indeterminado.</p>"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Gúdar-Javalambre",
+          "El Castellar",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "El Castellar",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca de Gúdar-Javalambre"]},
+      {
+        "location":"42.25887050000001,0.7209243",
+        "provincia":"HUESCA",
+        "title":"Yacimiento de icnitas de Arén",
+        "description":"<P>El Yacimiento de Arén (Huesca) es uno de los más importantes enclaves paleontológicos, donde se encuentran los restos de dinosaurios que vivieron en el Maastrichtiense superior, en el &nbsp;Cretácico superior, &nbsp;justo antes de la extinción del llamado límite Cretácico-Terciario, hace 65 millones de años. Se han encontrado dos tipos de restos: icnitas o huellas de dinosaurio fosilizadas y restos óseos. </P><P>El dinosaurio se encontraba en un estrato de areniscas constituido por arenas de",
+        "title_string":"Yacimiento de icnitas de Arén",
+        "content":"Yacimiento de icnitas de Arén Yacimiento de icnitas de Arén El Yacimiento de Arén (Huesca) es uno de los más importantes enclaves paleontológicos, donde se encuentran los restos de dinosaurios que vivieron en el Maastrichtiense superior, en el  Cretácico superior,  justo antes de la extinción del llamado límite Cretácico-Terciario, hace 65 millones de años. Se han encontrado dos tipos de restos: icnitas o huellas de dinosaurio fosilizadas y restos óseos. El dinosaurio se encontraba en un estrato de areniscas constituido por arenas de grano fino, pero muy endurecidas, recristalizadas en procesos posteriores  como la diagénesis. Se han encontrado unas cuarenta piezas, entre las que destaca un fémur y las vértebras de la cola, pero también han aparecido los restos de una tibia, varias costillas, algún diente ... A la importancia de la conservación de los restos y su datación, hay que añadir la presencia en el yacimiento de otros restos como placas de tortuga y dientes de cocodrilo de la misma época, ya que esta zona era una marisma de clima tropical, y junto a los dinosaurios convivían todo tipo de fauna tropical, como tortugas, cocodrilos y una gran diversidad de mamíferos. La existencia de restos de dinosaurios es conocida en Areny desde 1992, año en que se descubrió el yacimiento de huellas de dinosaurio y que se denominó \"Arén\". El descubrimiento fue casual, ya que el geólogo Luis Ardévol estaba realizando la cartografía geológica de los alrededores de Arén, pero enseguida reconoció la gran importancia que tenían los restos que había encontrado. Inicialmente estaban al descubierto 9 icnitas distribuidas en unos 15 m2 , el resto quedaban ocultas. Por ello, durante el verano de 2000, se realizó una excavación tras la que se pudo diferenciar dos niveles con icnitas (Areny I y II). La Associación Cultural d'Areny (Arén) está acondicionando y señalizando dos rutas turísticas sobre los restos de dinosaurios descubiertos en la localidad. También está en marcha la creación de un Museo Paleontológico en la antigua Casa Consistorial. 7000 Avenida Ribagorza Ayuntamiento de Arén 974 542 000 http://www.aren.es/ aytoaren@hotmail.com Ayuntamiento de Arén http://www.aren.es/ Arén. Dinosaurios y senderismo http://www.areny.com/ Aragón Patrimonio Cultural Restaurado. 1984/2009. Bienes inmuebles MÉNDEZ DE JUAN, JOSÉ FÉLIX et al. (Coord.) Gobierno de Aragón, Zaragoza, 2010. Los yacimientos de dinosaurios de Arén VV.AA Ed. Prames: Departamento de Educación, Cultura y Deporte, Zaragoza, 2005. Patrimonio geológico-minero de Aragón VV.AA Gobierno de Aragón, Zaragoza, 2002.",
+        "municipio":"Arén",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de icnitas de Arén"],
+        "web_content/Descripcion":[
+          "<p> El Yacimiento de Arén (Huesca) es uno de los más importantes enclaves paleontológicos, donde se encuentran los restos de dinosaurios que vivieron en el Maastrichtiense superior, en el &nbsp;Cretácico superior, &nbsp;justo antes de la extinción del llamado límite Cretácico-Terciario, hace 65 millones de años. Se han encontrado dos tipos de restos: icnitas o huellas de dinosaurio fosilizadas y restos óseos.</p> <p> El dinosaurio se encontraba en un estrato de areniscas constituido por arenas de grano fino, pero muy endurecidas, recristalizadas en procesos posteriores&nbsp; como la diagénesis. Se han encontrado unas cuarenta piezas, entre las que destaca un fémur y las vértebras de la cola, pero también han aparecido los restos de una tibia, varias costillas, algún diente ...</p> <p> A la importancia de la conservación de los restos y su datación, hay que añadir la presencia en el yacimiento de otros restos como placas de tortuga y dientes de cocodrilo de la misma época, ya que esta zona era una marisma de clima tropical, y junto a los dinosaurios convivían todo tipo de fauna tropical, como tortugas, cocodrilos y una gran diversidad de mamíferos.</p> <p> La existencia de restos de dinosaurios es conocida en Areny desde 1992, año en que se descubrió el yacimiento de huellas de dinosaurio y que se denominó \"Arén\". El descubrimiento fue casual, ya que el geólogo Luis Ardévol estaba realizando la cartografía geológica de los alrededores de Arén, pero enseguida reconoció la gran importancia que tenían los restos que había encontrado. Inicialmente estaban al descubierto 9 icnitas distribuidas en unos 15 m2 , el resto quedaban ocultas. Por ello, durante el verano de 2000, se realizó una excavación tras la que se pudo diferenciar dos niveles con icnitas (Areny I y II).</p> <p> La Associación Cultural d'Areny (Arén) está acondicionando y señalizando dos rutas turísticas sobre los restos de dinosaurios descubiertos en la localidad. También está en marcha la creación de un Museo Paleontológico en la antigua Casa Consistorial.</p>"],
+        "web_content/Titulo":[
+          "Patrimonio geológico-minero de Aragón"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Gobierno de Aragón, Zaragoza, 2002."],
+        "assetCategoryNames":[
+          "HUESCA",
+          "La Ribagorza",
+          "Arén",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Arén",
+          "Dinosaurios",
+          "Icnitas"],
+        "web_content/Denominacion-secundaria":[
+          "Yacimiento de icnitas de Arén"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Arén. Dinosaurios y senderismo"],
+        "web_content/Autor":[
+          "VV.AA"]},
+      {
+        "location":"40.3652427,-0.8173128",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de El Castellar",
+        "description":"El yacimiento de icnitas de El Castellar se halla en un afloramiento calcáreo situado al sur de la población de El Castellar, a unos 400 metros al sur de la carretera que une El Castellar con Formiche Alto.",
+        "title_string":"Yacimiento de El Castellar",
+        "content":"Yacimiento de El Castellar El yacimiento de icnitas de El Castellar se halla en un afloramiento calcáreo situado al sur de la población de El Castellar, a unos 400 metros al sur de la carretera que une El Castellar con Formiche Alto.  Geológicamente, el yacimiento de El Castellar aflora en capas calcáreas del Jurásico superior con dirección y buzamiento 140º/20º. Corresponden a facies de transición entre los depósitos marinos del Jurásico superior y los sedimentos deltaicos del Cretácico basal. Pertenecen a la Formación Villar del Arzobispo, de edad Titónico-Berriasiense. Las calizas tienen colores grises y forman estratos de espesor que varía entre 10 y 20 cm. Abundan los ripple marks en su techo, así como alguna grieta de desecación. En conjunto se interpretan como sistemas fluviales que desembocaban en un «lagoon», desarrollando aparatos deltaicos modificados por la acción de las mareas y el oleaje. La serie de calizas está inmediatamente cubierta por arcillas verdes y rojas. En todos los barrancos que se sitúan al oeste de El Castellar se localizan huellas dispersas de forma ovalada atribuibles a saurópodos. En uno de ellos se encuentra el yacimiento El Castellar, donde la concentración de huellas es mucho mayor, ya que se estima que hay unas 160 huellas en el tramo principal, sobre una superficie de unos 500 metros cuadrados. En una capa caliza superior se pueden observar al menos dos pequeños rastros de saurópodo: uno de ellos está formado por dos pies de forma ovalada y dos manos en forma de medialuna, con una dirección aparente N314ºE y el otro delimitado por dos manos que indican una dirección aparente N12ºE. Se estima que el número de rastros puede ser mayor, pero para poder observarlos se deben estudiar detalladamente todas las huellas. Predomina una gran dinoturbación de icnitas de saurópodos. Cabe señalar que las huellas de las manos están más marcadas que las de los pies y se observa en aquéllas un mayor reborde. En el centro del yacimiento se encuentra un rastro de tres huellas tridáctilas; la primera de ellas está muy marcada y la tercera también. La gran longitud del dedo central (36 cm.) hace pensar que dicha huella podría pertenecer a un terópodo. En un estrato inferior se localiza un interesante rastro de huellas tridáctilas, claramente asignable a un dinosaurio terópodo. Está representado por cinco huellas de gran tamaño, ya que miden 0,60 cm desde el talón a la punta del dedo central. Tres de las icnitas están bien conservadas, una en mal estado y de la quinta sólo se conserva un reborde, ya que se sitúa en el borde erosionado de la capa. La longitud del rastro supera los 10 metros y el espacio entre ellas es de 1,40 metros. El Boletín Oficial de Aragón del día 11 de febrero de 2004 publica el Decreto 18/2004, de 27 de enero, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio, localizados en el término municipal de el Castellar (Teruel), entre los que se encuentra el Yacimiento de icnitas de dinosaurio de El Castellar. 7000 Plaza Mayor, 3. 44409 El Castellar (Teruel) Ayuntamiento de El Castellar 978 800 188 1-PAL-TER-032-070-001 Comarca de Gúdar-Javalambre http://www.gudarjavalambre.es/",
+        "municipio":"El Castellar",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de El Castellar"],
+        "web_content/Descripcion":[
+          "<p align=\"justify\"> El yacimiento de icnitas de El Castellar se halla en un afloramiento calcáreo situado al sur de la población de El Castellar, a unos 400 metros al sur de la carretera que une El Castellar con Formiche Alto.&nbsp;</p> <p align=\"justify\"> Geológicamente, el yacimiento de El Castellar aflora en capas calcáreas del Jurásico superior con dirección y buzamiento 140º/20º. Corresponden a facies de transición entre los depósitos marinos del Jurásico superior y los sedimentos deltaicos del Cretácico basal. Pertenecen a la Formación Villar del Arzobispo, de edad Titónico-Berriasiense. Las calizas tienen colores grises y forman estratos de espesor que varía entre 10 y 20 cm. Abundan los ripple marks en su techo, así como alguna grieta de desecación. En conjunto se interpretan como sistemas fluviales que desembocaban en un «lagoon», desarrollando aparatos deltaicos modificados por la acción de las mareas y el oleaje. La serie de calizas está inmediatamente cubierta por arcillas verdes y rojas.</p> <p align=\"justify\"> En todos los barrancos que se sitúan al oeste de El Castellar se localizan huellas dispersas de forma ovalada atribuibles a saurópodos. En uno de ellos se encuentra el yacimiento El Castellar, donde la concentración de huellas es mucho mayor, ya que se estima que hay unas 160 huellas en el tramo principal, sobre una superficie de unos 500 metros cuadrados. En una capa caliza superior se pueden observar al menos dos pequeños rastros de saurópodo: uno de ellos está formado por dos pies de forma ovalada y dos manos en forma de medialuna, con una dirección aparente N314ºE y el otro delimitado por dos manos que indican una dirección aparente N12ºE. Se estima que el número de rastros puede ser mayor, pero para poder observarlos se deben estudiar detalladamente todas las huellas. Predomina una gran dinoturbación de icnitas de saurópodos. Cabe señalar que las huellas de las manos están más marcadas que las de los pies y se observa en aquéllas un mayor reborde.</p> <p align=\"justify\"> En el centro del yacimiento se encuentra un rastro de tres huellas tridáctilas; la primera de ellas está muy marcada y la tercera también. La gran longitud del dedo central (36 cm.) hace pensar que dicha huella podría pertenecer a un terópodo.</p> <p align=\"justify\"> En un estrato inferior se localiza un interesante rastro de huellas tridáctilas, claramente asignable a un dinosaurio terópodo. Está representado por cinco huellas de gran tamaño, ya que miden 0,60 cm desde el talón a la punta del dedo central. Tres de las icnitas están bien conservadas, una en mal estado y de la quinta sólo se conserva un reborde, ya que se sitúa en el borde erosionado de la capa. La longitud del rastro supera los 10 metros y el espacio entre ellas es de 1,40 metros.</p> <p align=\"justify\"> El Boletín Oficial de Aragón del día 11 de febrero de 2004 publica el Decreto 18/2004, de 27 de enero, del Gobierno de Aragón, por el que se declaran Bien de Interés Cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio, localizados en el término municipal de el Castellar (Teruel), entre los que se encuentra el Yacimiento de icnitas de dinosaurio de El Castellar.</p>"],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=a7ec0eb5-747a-4526-87ff-4eff97db9407&groupId=10157&t=1523954042358"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Gúdar-Javalambre",
+          "El Castellar",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "El Castellar",
+          "Cocodrilos",
+          "Icnitas"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Comarca de Gúdar-Javalambre"]},
+      {
+        "location":"40.65557210000001,-0.8808522",
+        "provincia":"TERUEL",
+        "title":"Yacimiento de Las Cerradicas",
+        "description":"<P align=justify>El Yacimiento de \"Las Cerradicas\" pertenece al conjunto de Galve (Teruel). Galve es uno de los más importantes enclaves paleontológicos de toda la península. Se localiza sobre un estrato de areniscas de la parte más alta de la Fm. Villar del Arzobispo, de edad Titónico-Berriasiense y contiene huellas de Ornitópodos y Terópodos.</P>",
+        "title_string":"Yacimiento de Las Cerradicas",
+        "content":"Yacimiento de Las Cerradicas El Yacimiento de \"Las Cerradicas\" pertenece al conjunto de Galve (Teruel), uno de los más importantes enclaves paleontológicos de toda la Península Ibérica. Se localiza sobre un estrato de areniscas de la parte más alta de la Fm. Villar del Arzobispo, de edad Titónico-Berriasiense (Cretácico Inferior) y contiene huellas de Ornitópodos, Terópodos y Saurópodos. Destaca por la existencia de diversos afloramientos de huellas o icnitas de dinosaurios que son los más extensos de Aragón. Contiene en torno a 40 huellas distribuidas en cuatro rastrilladas, repartidas en unos 25 metros cuadrados y que fueron realizadas por tres dinosaurios carnívoros y otra por un herbívoro. Este yacimiento paleontológico tiene además gran relevancia científica a nivel internacional, debido a que contiene las huellas de Iguanodóntilos (ornitópodos) cuadrúpedas más antiguas y más pequeñas encontradas en el mundo, lo que demuestra que estos dinosaurios comenzaron a andar a cuatro patas al inicio del Cretácico, hace 130 millones de años. El Boletín Oficial de Aragón de 12 de febrero de 2003 publica el Decreto 20/2003, de 28 de enero, del Gobierno de Aragón, por el que se declaran bien de interés cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio localizados en la Comunidad Autónoma de Aragón, entre los que se encuentra el yacimiento de Las Cerradicas de Galve. INTERVENCIONES Los primeros trabajos de excavación se realizaron en 1992. Entre 2003 y 2005 el Gobierno de Aragón en colaboración con el INAEM pusieron en marcha la Escuela Taller de Restauración Paleontológica I. Esta Escuela Taller llevó a cabo la limpieza, consolidación y adecuación del yacimiento de Las Cerradicas. En el año 2005 se realizaron trabajos de restauración y consolidación de las huellas. En 2008 el Gobierno de Aragón, con la aportación del Fondo Europeo de Desarrollo Regional (Programa Operativo FEDER ARAGÓN 2007-2013) promovió la cubrición del yacimiento con el fin de proteger este vestigio  y conectarlo con el mundo de la ciencia, la naturaleza y su interpretación. 41 Acceso libre 1-PAL-TER-029-115-001 El Museo Paleontológico de Galve ofrece conjuntamente visitas guiadas al museo y a yacimientos paleontológicos cercanos como el de Las Cerradicas. También se programan recorridos geológicos. Más información y reservas: 669340021 contacto@dinosauriosgalve.com   Grupo Aragosaurus. Universidad de Zaragoza http://www.aragosaurus.com/?seccion=invest_y&lugar=Galve%20%28Cerradicas%29,%20Teruel Dinosaurios de Galve http://www.dinosauriosgalve.com/presentacion.php Dinópolis- Legendark http://www.dinopolis.com/legendark.html Guía del Parque Paleontológico de Galve Barco, J. l., Ruiz-Omeñaca, J. I., Canudo, J. I., Cuenca-Bescós, G., Amo Sanjuán, O., Pérez-Lorente, F., Rubio, C. y Herrero, M. A Ayuntamiento de Galve y Paleoymás, 2004. \"Los dinosaurios de la Formación Villar del Arzobispo (Titónico medio-Berriasiense inferior) en Galve (Teruel)\" Canudo, J. I., Aurell, M., Barco, J. L., Cuenca-Bescós, G. y Ruiz-Omeñaca, J. I Geogaceta, 38, 39-42, 2005. Aragón Patrimonio Cultural Restaurado. 1984/2009. Bienes inmuebles MÉNDEZ DE JUAN, JOSÉ FÉLIX, GALINDO PÉREZ, SILVIA y LASHERAS RODRÍGUEZ, JAVIER Gobierno de Aragón, Zaragoza, 2010. \"Estado de las investigaciones sobre los vertebrados del Jurásico superior y el Cretácico inferior de Galve (Teruel)\" Ruiz-Omeñaca, J.I., Canudo, J.I., Aurell, M., Badenas, B., Cuenca-Bescós, G. e Ipas, J Estudios geológicos, 60, 179-202, 2004.",
+        "municipio":"Galve",
+        "web_content/Denominacion-principal":[
+          "Yacimiento de Las Cerradicas"],
+        "web_content/Descripcion":[
+          "<p id=\"aui_3_2_0_19570\" align=\"justify\"> El Yacimiento de \"Las Cerradicas\" pertenece al conjunto de Galve (Teruel), uno de los más importantes enclaves paleontológicos de toda la Península Ibérica. Se localiza sobre un estrato de areniscas de la parte más alta de la Fm. Villar del Arzobispo, de edad Titónico-Berriasiense (Cretácico Inferior) y contiene huellas de Ornitópodos, Terópodos y Saurópodos.</p> <p id=\"aui_3_2_0_19584\" align=\"justify\"> Destaca por la existencia de diversos afloramientos de huellas o icnitas de dinosaurios que son los más extensos de Aragón. Contiene en torno a 40 huellas distribuidas en cuatro rastrilladas, repartidas en unos 25 metros cuadrados y que fueron realizadas por tres dinosaurios carnívoros y otra por un herbívoro.</p> <p id=\"aui_3_2_0_111539\" align=\"justify\"> Este yacimiento paleontológico tiene además gran relevancia científica a nivel internacional,&nbsp;debido a que&nbsp;contiene las huellas de Iguanodóntilos (ornitópodos) cuadrúpedas más antiguas y más pequeñas encontradas en el mundo, lo que demuestra que estos dinosaurios comenzaron a andar a cuatro patas al inicio del Cretácico, hace 130 millones de años.</p> <p id=\"aui_3_2_0_112295\" align=\"justify\"> El Boletín Oficial de Aragón de 12 de febrero de 2003 publica el Decreto 20/2003, de 28 de enero, del Gobierno de Aragón, por el que se declaran bien de interés cultural, en la categoría de Conjunto de Interés Cultural, zona paleontológica, diferentes yacimientos de icnitas de dinosaurio localizados en la Comunidad Autónoma de Aragón, entre los que se encuentra el yacimiento de Las Cerradicas de Galve.</p> <p align=\"justify\"> <strong>INTERVENCIONES</strong></p> <p align=\"justify\"> Los primeros trabajos de excavación se realizaron en 1992.</p> <p align=\"justify\"> Entre 2003 y 2005 el Gobierno de Aragón en colaboración con el INAEM pusieron en marcha la Escuela Taller de Restauración Paleontológica I. Esta Escuela Taller llevó a cabo la limpieza, consolidación y adecuación del yacimiento de Las Cerradicas.</p> <p align=\"justify\"> En el año 2005 se realizaron trabajos de restauración y consolidación de las huellas. En 2008 el Gobierno de Aragón, con la aportación del Fondo Europeo de Desarrollo Regional (Programa Operativo FEDER ARAGÓN 2007-2013) promovió la cubrición del yacimiento con el fin de proteger este vestigio&nbsp; y conectarlo con el mundo de la ciencia, la naturaleza y su interpretación.</p>"],
+        "web_content/Titulo":[
+          "\"Estado de las investigaciones sobre los vertebrados del Jurásico superior y el Cretácico inferior de Galve (Teruel)\""],
+        "web_content/Periodo":[
+          "Cretácico"],
+        "web_content/Referencia":[
+          "Estudios geológicos, 60, 179-202, 2004."],
+        "web_content/Archivo-multimedia":[
+          "/image/image_gallery?uuid=150b459b-14c6-416f-adb4-c5e91f4b1e3d&groupId=10157&t=1349859608806",
+          "/image/image_gallery?uuid=663d7cf8-a877-4d27-a1e0-280d2b9352da&groupId=10157&t=1349859609437",
+          "/image/image_gallery?uuid=c9d2d299-bb92-4314-a28a-afaf77e2c378&groupId=10157&t=1349859609922"],
+        "assetCategoryNames":[
+          "TERUEL",
+          "Comunidad de Teruel",
+          "Galve",
+          "BIC",
+          "Mesozoico",
+          "Cretácico",
+          "Paleontología",
+          "Yacimientos de icnitas",
+          "Conjunto de Interés Cultural",
+          "Zona Paleontológica",
+          "Galve",
+          "Dinosaurios",
+          "Icnitas",
+          "Peces",
+          "Recursos didácticos"],
+        "web_content/Era":[
+          "Mesozoico"],
+        "web_content/Titulo-enlace":[
+          "Dinópolis- Legendark"],
+        "web_content/Autor":[
+          "Ruiz-Omeñaca, J.I., Canudo, J.I., Aurell, M., Badenas, B., Cuenca-Bescós, G. e Ipas, J"]}]
+  }}
