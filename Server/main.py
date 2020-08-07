@@ -102,7 +102,7 @@ def load_db():
         municipality = ''
         categories = []
 
-        if 'location' in doc.keys():
+        if 'title' in doc.keys():
             name = doc['title']
 
         if 'location' in doc.keys():
@@ -126,7 +126,8 @@ def load_db():
 
         places += [place]
 
-    db.bienes.insert_many(places)
+    db.places.create_index([("name", pymongo.DESCENDING)])
+    db.places.insert_many(places)
 
 
 def verify_password(plain_password, hashed_password):
@@ -217,15 +218,52 @@ async def get_user(current_user: User = Depends(get_current_user)):
 @app.get('/categories', response_model=List[str])
 def get_categories():
     db = get_mongo_db()
-    categories = db.bienes.distinct('categories')
+    categories = db.places.distinct('categories')
     return categories
 
 
 @app.get('/places', response_model=List[Place])
-def get_places_by_category(category: Optional[List[str]] = Query(None)):
+def get_places_list(category: Optional[List[str]] = Query(None)):
     db = get_mongo_db()
-    items = [Place(**i) for i in db.bienes.find({'categories': {'$in': category}})]
+    items = [Place(**i) for i in db.places.find({'categories': {'$in': category}})]
     return items
+
+
+@app.get('/places/{name}', response_model=Place)
+def get_place(name: str):
+    db = get_mongo_db()
+    result = db.places.find_one({'name': name})
+
+    if not result:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Name not found",
+        )
+
+    return Place(**result)
+
+
+@app.post('/places/{name}/favourite')
+def make_place_favourite(name: str, user: User = Depends(get_current_user)):
+    db = get_mongo_db()
+    result = db.places.find_one({'name': name})
+
+    if not result:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail="Name not found",
+        )
+
+    db.users.update({'email': user.email}, {'$push': {'favourite_places': result['_id']}})
+
+
+@app.get("/favourites", response_model=List[Place])
+async def get_user(user: User = Depends(get_current_user)):
+    db = get_mongo_db()
+    ids = db.users.find_one({'email': user.email})['favourite_places']
+    places = [i for i in db.places.find({'_id': {'$in': ids}})]
+
+    return places
 
 
 if __name__ == '__main__':
