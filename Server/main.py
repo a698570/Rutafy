@@ -223,9 +223,12 @@ def get_categories():
 
 
 @app.get('/places', response_model=List[Place])
-def get_places_list(category: Optional[List[str]] = Query(None)):
+def get_places_list(categories: Optional[List[str]] = Query(None)):
     db = get_mongo_db()
-    items = [Place(**i) for i in db.places.find({'categories': {'$in': category}})]
+    if categories:
+        items = [Place(**i) for i in db.places.find({'categories': {'$in': categories}})]
+    else:
+        items = [Place(**i) for i in db.places.find()]
     return items
 
 
