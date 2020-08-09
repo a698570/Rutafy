@@ -1,16 +1,26 @@
-from typing import Optional, List, Dict, Mapping
+from typing import Optional, List, Dict
 from datetime import datetime, timedelta
 from fastapi import Depends, FastAPI, Query, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
-from pydantic import BaseModel, EmailStr, SecretStr
+from pydantic import BaseModel, BaseSettings, EmailStr
 import pymongo
 import json
 
-SECRET_KEY = "09d25e094faa6ca2556c818166b7a9563b93f7099f6f0f4caa6cf63b88e8d3e7"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
+
+
+class Settings(BaseSettings):
+    secret_key: str
+    mongo_user: str
+    mongo_pwd: str
+    mongo_host: str
+    mongo_port: int
+
+    class Config:
+        env_file = ".env"
 
 
 class Token(BaseModel):
@@ -71,13 +81,15 @@ class Place(BaseModel):
         }
 
 
+settings = Settings()
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 
 
 def get_mongo_db():
-    client = pymongo.MongoClient('localhost', 27017)
+    mongo_server = f'mongodb+srv://{settings.mongo_user}:{settings.mongo_pwd}@{settings.mongo_host}'
+    client = pymongo.MongoClient(host=mongo_server, port=settings.mongo_port)
     db = client.rutafy_db
     return db
 
@@ -161,7 +173,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     else:
         expire = datetime.utcnow() + timedelta(minutes=15)
     to_encode.update({"exp": expire})
-    encoded_jwt = jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
+    encoded_jwt = jwt.encode(to_encode, settings.secret_key, algorithm=ALGORITHM)
     return encoded_jwt
 
 
@@ -172,7 +184,7 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
         headers={"WWW-Authenticate": "Bearer"},
     )
     try:
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
+        payload = jwt.decode(token, settings.secret_key, algorithms=[ALGORITHM])
         email: str = payload.get("sub")
         if email is None:
             raise credentials_exception
@@ -246,7 +258,7 @@ def get_place(name: str):
     return Place(**result)
 
 
-@app.post('/places/{name}/favourite')
+@app.post('/places/{name}/fav')
 def make_place_favourite(name: str, user: User = Depends(get_current_user)):
     db = get_mongo_db()
     result = db.places.find_one({'name': name})
@@ -257,13 +269,13 @@ def make_place_favourite(name: str, user: User = Depends(get_current_user)):
             detail="Name not found",
         )
 
-    db.users.update({'email': user.email}, {'$push': {'favourite_places': result['_id']}})
+    db.users.update({'email': user.email}, {'$push': {'fav_places': result['_id']}})
 
 
-@app.get("/favourites", response_model=List[Place])
-async def get_user(user: User = Depends(get_current_user)):
+@app.get("/fav/places", response_model=List[Place])
+async def get_fav_places(user: User = Depends(get_current_user)):
     db = get_mongo_db()
-    ids = db.users.find_one({'email': user.email})['favourite_places']
+    ids = db.users.find_one({'email': user.email})['fav_places']
     places = [i for i in db.places.find({'_id': {'$in': ids}})]
 
     return places
