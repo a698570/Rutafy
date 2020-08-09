@@ -47,7 +47,7 @@ class LoginUser(BaseModel):
 
 class User(BaseModel):
     email: EmailStr
-    categories: Optional[List[str]]
+    categories: List[str] = []
 
     class Config:
         schema_extra = {
@@ -227,6 +227,14 @@ async def get_user(current_user: User = Depends(get_current_user)):
     return current_user
 
 
+@app.post("/user/categories", response_model=User)
+async def add_user_categories(categories: List[str], user: User = Depends(get_current_user)):
+    db = get_mongo_db()
+    db.users.update({'email': user.email}, {'$addToSet': {'categories': {'$each': categories}}})
+    result = User(**db.users.find_one({'email': user.email}))
+    return result
+
+
 @app.get('/categories', response_model=List[str])
 def get_categories():
     db = get_mongo_db()
@@ -269,7 +277,7 @@ def make_place_favourite(name: str, user: User = Depends(get_current_user)):
             detail="Name not found",
         )
 
-    db.users.update({'email': user.email}, {'$push': {'fav_places': result['_id']}})
+    db.users.update({'email': user.email}, {'$addToSet': {'fav_places': result['_id']}})
 
 
 @app.get("/fav/places", response_model=List[Place])
