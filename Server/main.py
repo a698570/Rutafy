@@ -14,8 +14,8 @@ ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 class Settings(BaseSettings):
     secret_key: str
-    mongo_user: str
-    mongo_pwd: str
+    mongo_user: str = ''
+    mongo_pwd: str = ''
     mongo_host: str
     mongo_port: int
 
@@ -88,7 +88,11 @@ app = FastAPI()
 
 
 def get_mongo_db():
-    mongo_server = f'mongodb+srv://{settings.mongo_user}:{settings.mongo_pwd}@{settings.mongo_host}'
+    if settings.mongo_user != '':
+        mongo_server = f'mongodb+srv://{settings.mongo_user}:{settings.mongo_pwd}@{settings.mongo_host}'
+    else:
+        mongo_server = f'{settings.mongo_host}'
+
     client = pymongo.MongoClient(host=mongo_server, port=settings.mongo_port)
     db = client.rutafy_db
     return db
