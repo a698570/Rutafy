@@ -4,11 +4,13 @@ from fastapi import Depends, FastAPI, Query, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
 from jose import JWTError, jwt
 from passlib.context import CryptContext
+import hashlib
 from pydantic import BaseModel, BaseSettings, EmailStr
 import pymongo
 import json
+from geopy.distance import geodesic
 
-ALGORITHM = "HS256"
+ALGORITHM = 'HS256'
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
 
@@ -20,7 +22,7 @@ class Settings(BaseSettings):
     mongo_port: int
 
     class Config:
-        env_file = ".env"
+        env_file = '.env'
 
 
 class Token(BaseModel):
@@ -62,9 +64,22 @@ class UserInDB(User):
     hashed_password: str
 
 
+class Location(BaseModel):
+    type: str = 'Point'
+    coordinates: List[float]
+
+    class Config:
+        schema_extra = {
+            'example': {
+                'type': 'Point',
+                'coordinates': [-73.856077, 40.848447]
+            }
+        }
+
+
 class Place(BaseModel):
     name: str
-    location: Dict
+    location: Location
     description: str = ''
     municipality: str = ''
     categories: List[str] = []
@@ -73,10 +88,39 @@ class Place(BaseModel):
         schema_extra = {
             'example': {
                 'name': 'Castillo',
-                'location':  '{\'type\': \'Point\', \'coordinates\': [-73.856077, 40.848447]}',
+                'location': {
+                    'type': 'Point',
+                    'coordinates': [-73.856077, 40.848447]
+                },
                 'description': 'A very nice castle',
                 'municipality': 'Teruel',
                 'categories': ['Castillo', 'Teruel', 'Ruinas']
+            }
+        }
+
+
+class Route(BaseModel):
+    id: str
+    minutes: int
+    categories: List[str] = []
+    places: List[Place] = []
+
+    class Config:
+        schema_extra = {
+            'example': {
+                'id': 'jjhbyybkiu2342',
+                'minutes': 300,
+                'categories': ['Castillo', 'Teruel', 'Ruinas'],
+                'places': [{
+                    'name': 'Castillo',
+                    'location': {
+                        'type': 'Point',
+                        'coordinates': [-73.856077, 40.848447]
+                    },
+                    'description': 'A very nice castle',
+                    'municipality': 'Teruel',
+                    'categories': ['Castillo', 'Teruel', 'Ruinas']
+                }]
             }
         }
 
@@ -110,8 +154,6 @@ def load_db():
     places = []
 
     for doc in docs:
-        place = {}
-
         name = ''
         location = {'type': 'Point', 'coordinates': [0.0, 0.0]}
         description = ''
@@ -124,6 +166,7 @@ def load_db():
         if 'location' in doc.keys():
             coordinates = [float(i) for i in doc['location'].split(',')]
             location['coordinates'] = coordinates
+            location = Location(**location)
 
         if 'description' in doc.keys():
             description = doc['description']
@@ -134,16 +177,21 @@ def load_db():
         if 'assetCategoryNames' in doc.keys():
             categories = doc['assetCategoryNames']
 
-        place['location'] = location
-        place['name'] = name
-        place['description'] = description
-        place['municipality'] = municipality
-        place['categories'] = categories
+        place = Place(
+            name=name,
+            location=location,
+            description=description,
+            municipality=municipality,
+            categories=categories
+        )
 
-        places += [place]
+        places += [place.dict()]
 
-    db.places.create_index([("name", pymongo.DESCENDING)])
+    db.places.create_index([('name', pymongo.ASCENDING)])
+    db.places.create_index([('location', pymongo.GEOSPHERE)])
     db.places.insert_many(places)
+
+    db.routes.create_index([('id', pymongo.ASCENDING)])
 
 
 def verify_password(plain_password, hashed_password):
@@ -184,12 +232,12 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
 async def get_current_user(token: str = Depends(oauth2_scheme)):
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
-        detail="Could not validate credentials",
-        headers={"WWW-Authenticate": "Bearer"},
+        detail='Could not validate credentials',
+        headers={'WWW-Authenticate': 'Bearer'},
     )
     try:
         payload = jwt.decode(token, settings.secret_key, algorithms=[ALGORITHM])
-        email: str = payload.get("sub")
+        email: str = payload.get('sub')
         if email is None:
             raise credentials_exception
         token_data = TokenData(email=email)
@@ -201,20 +249,104 @@ async def get_current_user(token: str = Depends(oauth2_scheme)):
     return user
 
 
-@app.post("/token", response_model=Token)
+# Returns minutes
+def route_time(places: List[Place]) -> int:
+    time = 0
+    speed = 1.5  # km/min
+    time_visit_place = 30  # minutes
+
+    # Time spent walking around each place visited
+    time += len(places) * time_visit_place
+
+    # Estimated time spent traveling between places
+    for place_1, place_2 in zip(places, places[1:]):
+        pos_1 = place_1.location.coordinates
+        pos_2 = place_2.location.coordinates
+        distance = geodesic(pos_1, pos_2).kilometers
+        time += int(distance / speed)
+
+    return time
+
+
+def plan_route(time_limit: int, places: List[Place], categories: List[str]) -> Route:
+    db = get_mongo_db()
+
+    time = route_time(places)
+
+    # Keep adding intermediate places to visit until the route is long enough
+    while time < time_limit:
+        big_i = 0
+        big_distance = 0
+
+        # Select the pair of consecutive places in the route with bigger distance
+        for i in range(len(places) - 1):
+            pos_1 = places[i].location.coordinates
+            pos_2 = places[i+1].location.coordinates
+            distance = geodesic(pos_1, pos_2).meters
+            if distance > big_distance:
+                big_distance = distance
+                big_i = i
+
+        # Find a new place between the selected places and insert it
+        pos_1 = places[big_i].location.coordinates
+        pos_2 = places[big_i + 1].location.coordinates
+        middle = [(pos_1[0] + pos_2[0]) / 2, (pos_1[1] + pos_2[1]) / 2]
+        radius = (big_distance / 2) * 0.8
+
+        result = db.places.find_one(
+            {
+                'location': {
+                    '$near': {
+                        '$geometry': {
+                            'type': 'Point',
+                            'coordinates': middle
+                        },
+                        '$maxDistance': radius  # meters
+                    }
+                },
+                'categories': {'$in': categories}
+            }
+        )
+
+        if result:
+            new_place = Place(**result)
+        else:
+            # TODO: add a better way to handle not finding a new place between a pair
+            break
+
+        places = places[:big_i+1] + [new_place] + places[big_i+1:]
+
+        time = route_time(places)
+
+    route_categories = set()
+
+    for p in places:
+        route_categories.update(p.categories)
+
+    route = Route(
+        id=hashlib.sha1(''.join([i.name for i in places]).encode('utf8')).hexdigest(),
+        minutes=route_time(places),
+        categories=list(route_categories),
+        places=places
+    )
+
+    return route
+
+
+@app.post('/token', response_model=Token)
 async def login_for_access_token(form_data: OAuth2PasswordRequestForm = Depends()):
     user = authenticate_user(form_data.username, form_data.password)
     if not user:
         raise HTTPException(
             status_code=status.HTTP_401_UNAUTHORIZED,
-            detail="Incorrect username or password",
-            headers={"WWW-Authenticate": "Bearer"},
+            detail='Incorrect username or password',
+            headers={'WWW-Authenticate': 'Bearer'},
         )
     access_token_expires = timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
     access_token = create_access_token(
-        data={"sub": user.email}, expires_delta=access_token_expires
+        data={'sub': user.email}, expires_delta=access_token_expires
     )
-    return {"access_token": access_token, "token_type": "bearer"}
+    return {'access_token': access_token, 'token_type': 'bearer'}
 
 
 @app.post('/user', response_model=User)
@@ -226,12 +358,12 @@ def add_user(user: LoginUser):
     return result
 
 
-@app.get("/user", response_model=User)
+@app.get('/user', response_model=User)
 async def get_user(current_user: User = Depends(get_current_user)):
     return current_user
 
 
-@app.post("/user/categories", response_model=User)
+@app.post('/user/categories', response_model=User)
 async def add_user_categories(categories: List[str], user: User = Depends(get_current_user)):
     db = get_mongo_db()
     db.users.update({'email': user.email}, {'$addToSet': {'categories': {'$each': categories}}})
@@ -264,7 +396,7 @@ def get_place(name: str):
     if not result:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Name not found",
+            detail='Name not found',
         )
 
     return Place(**result)
@@ -278,25 +410,68 @@ def make_place_favourite(name: str, user: User = Depends(get_current_user)):
     if not result:
         raise HTTPException(
             status_code=status.HTTP_404_NOT_FOUND,
-            detail="Name not found",
+            detail='Name not found',
         )
 
     db.users.update({'email': user.email}, {'$addToSet': {'fav_places': result['_id']}})
 
 
-@app.get("/fav/places", response_model=List[Place])
+@app.get('/routes', response_model=List[Route])
+def get_routes(
+        minutes: int,
+        places_names: Optional[List[str]] = Query(None),
+        categories: Optional[List[str]] = Query(None)):
+    db = get_mongo_db()
+
+    places = [Place(**i) for i in db.places.find({'name': {'$in': places_names}})]
+
+    # TODO: implement a better way to handle not receiving initial places
+    if len(places) < 2:
+        return []
+
+    # TODO: check if there are stored routes that fullfil the requirements
+    route = plan_route(minutes, places, categories)
+
+    db.routes.insert(route.dict())
+
+    return [route]
+
+
+@app.post('/routes/{route_id}/fav')
+def make_place_favourite(route_id: str, user: User = Depends(get_current_user)):
+    db = get_mongo_db()
+    result = db.routes.find_one({'id': route_id})
+
+    if not result:
+        raise HTTPException(
+            status_code=status.HTTP_404_NOT_FOUND,
+            detail='Name not found',
+        )
+
+    db.users.update({'email': user.email}, {'$addToSet': {'fav_routes': result['id']}})
+
+
+@app.get('/fav/places', response_model=List[Place])
 async def get_fav_places(user: User = Depends(get_current_user)):
     db = get_mongo_db()
     ids = db.users.find_one({'email': user.email})['fav_places']
-    places = [i for i in db.places.find({'_id': {'$in': ids}})]
+    places = [Place(**i) for i in db.places.find({'_id': {'$in': ids}})]
 
     return places
 
 
+@app.get('/fav/routes', response_model=List[Route])
+async def get_fav_routes(user: User = Depends(get_current_user)):
+    db = get_mongo_db()
+    ids = db.users.find_one({'email': user.email})['fav_routes']
+    routes = [Route(**i) for i in db.routes.find({'id': {'$in': ids}})]
+
+    return routes
+
 if __name__ == '__main__':
     import uvicorn
 
-    if get_mongo_db().list_collection_names().__len__() == 0:
+    if len(get_mongo_db().list_collection_names()) == 0:
         load_db()
 
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, log_level="info")
+    uvicorn.run('main:app', host='127.0.0.1', port=8000, log_level='info')
