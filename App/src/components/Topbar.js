@@ -101,20 +101,12 @@ class Topbar extends Component {
   }
 
   current = () => {
-    if (this.props.currentPath === "/home") {
-      return 0;
-    }
-    if (this.props.currentPath === "/dashboard") {
-      return 1;
-    }
-    if (this.props.currentPath === "/signup") {
-      return 2;
-    }
-    if (this.props.currentPath === "/wizard") {
-      return 3;
-    }
-    if (this.props.currentPath === "/cards") {
-      return 4;
+    let i = 0;
+    for (const entry in Menu) {
+      if (this.props.currentPath === entry['pathname']) {
+        return i;
+      }
+      i++;
     }
   };
 

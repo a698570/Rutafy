@@ -6,10 +6,12 @@ import Cards from './components/Cards'
 import Main from './components/Main'
 import Signup from './components/Signup'
 import ScrollToTop from './components/ScrollTop'
+import Topbar from "./components/Topbar";
 
 export default props => (
     <HashRouter>
       <ScrollToTop>
+        <Topbar />
         <Switch>
           <Route exact path='/' component={ Main } />
           <Route exact path='/dashboard' component={ Dashboard } />
