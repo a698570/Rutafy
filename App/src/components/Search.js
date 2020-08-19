@@ -10,6 +10,7 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Route from "./Route";
 
 function Search() {
+    const [logged, setLogged] = useState(false)
     const [routes, setRoutes] = useState([])
     const [places, setPlaces] = useState([])
     const [minutes, setMinutes] = useState(120)
@@ -17,6 +18,15 @@ function Search() {
     const [allCategories, setAllCategories] = useState([])
     const [allPlaces, setAllPlaces] = useState(
         ['Fuerte del Rapitán', 'Castillo de Loarre', 'Hotel San Ramón', 'Iglesia de San Sebastián'])
+
+    useEffect(() => {
+        let token = localStorage.getItem('token')
+        if (token) {
+            setLogged(true)
+        } else {
+            setLogged(false)
+        }
+    }, [])
 
     useEffect(() => {
         fetch('http://localhost:8000/categories',
@@ -141,26 +151,38 @@ function Search() {
                                 </div>
                             </Paper>
                         </Grid>
+                        {logged !== true ? (
+                                <Typography
+                                    variant="body1"
+                                    gutterBottom
+                                >
+                                    Please, log in to mark routes as favourites.
+                                </Typography>)
+                            : null
+                        }
                         {routes.map(route => (
                             <Grid item xs={12} md={6}>
                                 <Paper>
                                     <Route route={route}/>
-                                    <div style={{display: "flex", justifyContent: "flex-end"}}>
-                                        <Button
-                                            color="primary"
-                                            variant="contained"
-                                            onClick={() => makeFav(route['id'])}
-                                        >
-                                            Favorite
-                                        </Button>
-                                    </div>
+                                    {logged === true ? (
+                                            <div style={{display: "flex", justifyContent: "flex-end"}}>
+                                                <Button
+                                                    color="primary"
+                                                    variant="contained"
+                                                    onClick={() => makeFav(route['id'])}
+                                                >
+                                                    Favorite
+                                                </Button>
+                                            </div>)
+                                        : null}
                                 </Paper>
                             </Grid>
                         ))}
                     </Grid>
                 </Grid>
             </div>
-        </React.Fragment>)
+        </React.Fragment>
+    )
 }
 
 export default withRouter(Search);

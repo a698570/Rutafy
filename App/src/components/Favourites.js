@@ -10,19 +10,25 @@ import MenuItem from "@material-ui/core/MenuItem";
 import Route from "./Route";
 
 function Favourites() {
+    const [logged, setLogged] = useState(false)
     const [routes, setRoutes] = useState([])
 
     useEffect(() => {
-        let token = window.localStorage['token']
-        fetch('http://localhost:8000/fav/routes',
-            {
-                method: 'GET',
-                mode: 'cors',
-                credentials: 'include',
-                headers: {'Authorization': 'Bearer ' + token}
-            })
-            .then(response => response.ok ? response.json() : [])
-            .then(data => setRoutes(data));
+        let token = localStorage.getItem('token')
+        if (token) {
+            setLogged(true)
+            fetch('http://localhost:8000/fav/routes',
+                {
+                    method: 'GET',
+                    mode: 'cors',
+                    credentials: 'include',
+                    headers: {'Authorization': 'Bearer ' + token}
+                })
+                .then(response => response.ok ? response.json() : [])
+                .then(data => setRoutes(data));
+        } else {
+            setLogged(false)
+        }
     }, [])
 
     return (
@@ -45,11 +51,19 @@ function Favourites() {
                                 Favourite routes
                             </Typography>
                         </Grid>
-                        {routes.map(route => (
-                            <Grid item xs={12} md={6}>
-                                <Route route={route}/>
-                            </Grid>
-                        ))}
+                        {logged !== true ?
+                            (<Typography
+                                variant="body1"
+                                gutterBottom
+                            >
+                                Please, log in to view your favourite routes
+                            </Typography>)
+                            :
+                            routes.map(route => (
+                                <Grid item xs={12} md={6}>
+                                    <Route route={route}/>
+                                </Grid>
+                            ))}
                     </Grid>
                 </Grid>
             </div>

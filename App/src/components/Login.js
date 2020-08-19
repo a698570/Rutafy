@@ -6,12 +6,20 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
 
 function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
+    const [logged, setLogged] = useState(false)
 
+    useEffect(() => {
+        let token = localStorage.getItem('token')
+        if (token) {
+            setLogged(true)
+        } else {
+            setLogged(false)
+        }
+    }, [])
 
     const login = () => {
         let searchParams = new URLSearchParams();
@@ -28,15 +36,15 @@ function Login() {
             })
             .then(response => response.json())
             .then(data => {
-                let storage = window.localStorage
-                storage.setItem('token', data['access_token'])
+                localStorage.setItem('token', data['access_token'])
+                setLogged(true)
             })
     }
 
     const signup = () => {
         let body = {email: username, password: password}
 
-                fetch('http://localhost:8000/user',
+        fetch('http://localhost:8000/user',
             {
                 method: 'POST',
                 mode: 'cors',
@@ -45,6 +53,11 @@ function Login() {
             })
             .then(response => response.json())
             .then(() => login())
+    }
+
+    const logout = () => {
+        localStorage.removeItem('token')
+        setLogged(false)
     }
 
     return (
@@ -68,40 +81,66 @@ function Login() {
                                     >
                                         Login
                                     </Typography>
-                                    <form noValidate autoComplete="off">
-                                        <TextField
-                                            id="username"
-                                            label="username"
-                                            value={username}
-                                            onChange={e => setUsername(e.target.value)}/>
-                                        <TextField
-                                            id="password"
-                                            label="password"
-                                            type="password"
-                                            value={password}
-                                            onChange={e => setPassword(e.target.value)}/>
-                                    </form>
                                 </div>
-                                <div style={{display: "flex", justifyContent: "flex-end"}}>
-                                    <Button
-                                        color="primary"
-                                        variant="contained"
-                                        onClick={() => {
-                                            login();
-                                        }}
-                                    >
-                                        Login
-                                    </Button>
-                                    <Button
-                                        color="primary"
-                                        variant="contained"
-                                        onClick={() => {
-                                            signup();
-                                        }}
-                                    >
-                                        Signup
-                                    </Button>
-                                </div>
+                                {logged !== true ?
+                                    (
+                                        <div>
+                                            <div>
+                                                <form noValidate autoComplete="off">
+                                                    <TextField
+                                                        id="username"
+                                                        label="username"
+                                                        value={username}
+                                                        onChange={e => setUsername(e.target.value)}/>
+                                                    <TextField
+                                                        id="password"
+                                                        label="password"
+                                                        type="password"
+                                                        value={password}
+                                                        onChange={e => setPassword(e.target.value)}/>
+                                                </form>
+                                            </div>
+                                            <div style={{display: "flex", justifyContent: "flex-end"}}>
+                                                <Button
+                                                    color="primary"
+                                                    variant="contained"
+                                                    onClick={() => {
+                                                        login();
+                                                    }}
+                                                >
+                                                    Login
+                                                </Button>
+                                                <Button
+                                                    color="primary"
+                                                    variant="contained"
+                                                    onClick={() => {
+                                                        signup();
+                                                    }}
+                                                >
+                                                    Signup
+                                                </Button>
+                                            </div>
+                                        </div>) :
+                                    (<div>
+                                        <Typography
+                                            variant="body1"
+                                            gutterBottom
+                                        >
+                                            You are logged in.
+                                        </Typography>
+                                        <div style={{display: "flex", justifyContent: "flex-end"}}>
+                                            <Button
+                                                color="primary"
+                                                variant="contained"
+                                                onClick={() => {
+                                                    logout();
+                                                }}
+                                            >
+                                                Logout
+                                            </Button>
+                                        </div>
+                                    </div>)
+                                }
                             </Paper>
                         </Grid>
                     </Grid>
