@@ -401,6 +401,13 @@ def get_places_list(categories: Optional[List[str]] = Query(None)):
     return items
 
 
+@app.get('/places/names', response_model=List[str])
+def get_places_names():
+    db = get_mongo_db()
+    items = [Place(**i).name for i in db.places.find()]
+    return items
+
+
 @app.get('/places/{name}', response_model=Place)
 def get_place(name: str):
     db = get_mongo_db()
