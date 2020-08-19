@@ -2,6 +2,7 @@ from typing import Optional, List, Dict
 from datetime import datetime, timedelta
 from fastapi import Depends, FastAPI, Query, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
+from fastapi.middleware.cors import CORSMiddleware
 from jose import JWTError, jwt
 from passlib.context import CryptContext
 import hashlib
@@ -130,6 +131,18 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 
+origins = [
+    'http://localhost:3000',
+]
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=origins,
+    allow_credentials=True,
+    allow_methods=['*'],
+    allow_headers=['*'],
+)
+
 
 def get_mongo_db():
     if settings.mongo_user != '':
@@ -191,7 +204,7 @@ def load_db():
     db.places.create_index([('location', pymongo.GEOSPHERE)])
     db.places.insert_many(places)
 
-    db.routes.create_index([('id', pymongo.ASCENDING)])
+    db.routes.create_index([('id', pymongo.ASCENDING)], unique=True)
 
 
 def verify_password(plain_password, hashed_password):
@@ -422,19 +435,38 @@ def get_routes(
         places_names: Optional[List[str]] = Query(None),
         categories: Optional[List[str]] = Query(None)):
     db = get_mongo_db()
+    time_margin = 30  # minutes
 
-    places = [Place(**i) for i in db.places.find({'name': {'$in': places_names}})]
+    if not categories:
+        categories = []
+
+    if not places_names:
+        places_names = []
+        places = []
+    else:
+        places = [Place(**i) for i in db.places.find({'name': {'$in': places_names}})]
 
     # TODO: implement a better way to handle not receiving initial places
     if len(places) < 2:
         return []
 
-    # TODO: check if there are stored routes that fullfil the requirements
-    route = plan_route(minutes, places, categories)
+    routes = [i for i in db.routes.find(
+        {
+            'minutes': {'$elemMatch': {'$lte': minutes + time_margin, '$gte': minutes - time_margin}},
+            'places.name': {'$all': places_names},
+            'categories': {'$all': categories}
+        })]
 
-    db.routes.insert(route.dict())
+    if len(routes) == 0:
+        route = plan_route(minutes, places, categories)
+        try:
+            db.routes.insert(route.dict())
+        except pymongo.errors.DuplicateKeyError:
+            pass
 
-    return [route]
+        routes = [route]
+
+    return routes
 
 
 @app.post('/routes/{route_id}/fav')
