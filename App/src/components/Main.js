@@ -9,8 +9,6 @@ import Button from "@material-ui/core/Button";
 import InstructionDialog from "./dialogs/InstructionDialog";
 import SwipeDialog from "./dialogs/SwipeDialog";
 
-import Topbar from "./Topbar";
-
 const backgroundShape = require("../images/shape.svg");
 
 const styles = theme => ({
@@ -96,7 +94,16 @@ class Main extends Component {
     getStartedDialog: false
   };
 
-  componentDidMount() {}
+  componentDidMount() {
+    fetch('http://localhost:8000/categories',
+        {
+          method: 'GET',
+          mode: 'cors',
+          credentials: 'include',
+        })
+    .then(response => response.json())
+    .then(data => console.log(data));
+  }
 
   openDialog = event => {
     this.setState({ learnMoredialog: true });
@@ -119,7 +126,6 @@ class Main extends Component {
     return (
       <React.Fragment>
         <CssBaseline />
-        <Topbar />
         <div className={classes.root}>
           <Grid container justify="center">
             <Grid
@@ -129,7 +135,7 @@ class Main extends Component {
               container
               className={classes.grid}
             >
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={8}>
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography
@@ -137,10 +143,10 @@ class Main extends Component {
                       color="secondary"
                       gutterBottom
                     >
-                      First title
+                      Search routes
                     </Typography>
                     <Typography variant="body2" gutterBottom>
-                      A first title style <br /> with two lines
+                      Search touristic routes according to your insterests and time
                     </Typography>
                   </div>
                   <div style={{ display: "flex", justifyContent: "flex-end" }}>
@@ -148,13 +154,14 @@ class Main extends Component {
                       color="primary"
                       variant="contained"
                       className={classes.actionButtom}
+                      href='#search'
                     >
-                      Learn more
+                      Go
                     </Button>
                   </div>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={8}>
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography
@@ -162,10 +169,10 @@ class Main extends Component {
                       color="secondary"
                       gutterBottom
                     >
-                      Another box
+                      Favourites
                     </Typography>
-                    <Typography variant="body1" gutterBottom>
-                      A default box
+                    <Typography variant="body2" gutterBottom>
+                      Explore the routes that you marked as favourites
                     </Typography>
                   </div>
                   <div style={{ display: "flex", justifyContent: "flex-end" }}>
@@ -173,13 +180,14 @@ class Main extends Component {
                       color="primary"
                       variant="contained"
                       className={classes.actionButtom}
+                      href='#favourites'
                     >
-                      Learn more
+                      Go
                     </Button>
                   </div>
                 </Paper>
               </Grid>
-              <Grid item xs={12} md={4}>
+              <Grid item xs={12} md={8}>
                 <Paper className={classes.paper}>
                   <div className={classes.box}>
                     <Typography
@@ -187,56 +195,49 @@ class Main extends Component {
                       color="secondary"
                       gutterBottom
                     >
-                      A box with a carousel
+                      Profile
                     </Typography>
-                    <Typography variant="body1" gutterBottom>
-                      If you click in Getting Started, you will see a nice
-                      carousel
+                    <Typography variant="body2" gutterBottom>
+                      Update your default search preferences
                     </Typography>
                   </div>
-                  <div className={classes.alignRight}>
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
                     <Button
-                      onClick={this.openDialog}
-                      variant="outlined"
-                      className={classes.actionButtom}
-                    >
-                      Learn more
-                    </Button>
-                    <Button
-                      onClick={this.openGetStartedDialog}
                       color="primary"
                       variant="contained"
                       className={classes.actionButtom}
+                      href='#profile'
                     >
-                      Dashboard
+                      Go
                     </Button>
                   </div>
                 </Paper>
               </Grid>
-              <Grid container item xs={12}>
-                <Grid item xs={12}>
-                  <Paper className={classes.paper}>
-                    <div>
-                      <div className={classes.box}>
-                        <Typography color="secondary" gutterBottom>
-                          Full box
-                        </Typography>
-                        <Typography variant="body1" gutterBottom>
-                          This is an example of a full-width box
-                        </Typography>
-                      </div>
-                      <div className={classes.alignRight}>
-                        <Button
-                          color="primary"
-                          variant="contained"
-                          className={classes.actionButtom}
-                        >
-                          Learn more
-                        </Button>
-                      </div>
-                    </div>
-                  </Paper>
-                </Grid>
+              <Grid item xs={12} md={8}>
+                <Paper className={classes.paper}>
+                  <div className={classes.box}>
+                    <Typography
+                      style={{ textTransform: "uppercase" }}
+                      color="secondary"
+                      gutterBottom
+                    >
+                      Login
+                    </Typography>
+                    <Typography variant="body2" gutterBottom>
+                      Create an account, log to it or log out
+                    </Typography>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <Button
+                      color="primary"
+                      variant="contained"
+                      className={classes.actionButtom}
+                      href='#login'
+                    >
+                      Go
+                    </Button>
+                  </div>
+                </Paper>
               </Grid>
             </Grid>
           </Grid>
