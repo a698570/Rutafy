@@ -7,6 +7,7 @@ import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
+import Route from "./Route";
 
 function Favourites() {
     const [routes, setRoutes] = useState([])
@@ -35,32 +36,18 @@ function Favourites() {
                         justify="center"
                         container
                     >
+                        <Grid item xs={12}>
+                            <Typography
+                                style={{textTransform: "uppercase"}}
+                                color="secondary"
+                                gutterBottom
+                            >
+                                Favourite routes
+                            </Typography>
+                        </Grid>
                         {routes.map(route => (
-                            <Grid item xs={12} md={4}>
-                                <Paper>
-                                    <div>
-                                        <Typography
-                                            style={{textTransform: "uppercase"}}
-                                            color="secondary"
-                                            gutterBottom
-                                        >
-                                            {route['places'].length > 4 ?
-                                                route['places'][0]['name'] + ' - ' +
-                                                route['places'][1]['name'] + ' - ' +
-                                                '... - ' +
-                                                route['places'][route['places'].length - 2]['name'] + ' - ' +
-                                                route['places'][route['places'].length - 1]['name'] :
-                                                route['places'].map(p => p['name'] + ' - ')
-                                            }
-                                        </Typography>
-                                        <Typography variant="body2" gutterBottom>
-                                            Time: {route['minutes']}
-                                        </Typography>
-                                        <Typography variant="body2" gutterBottom>
-                                            Places: {route['places'].map(p => p['name'] + ', ')}
-                                        </Typography>
-                                    </div>
-                                </Paper>
+                            <Grid item xs={12} md={6}>
+                                <Route route={route}/>
                             </Grid>
                         ))}
                     </Grid>
