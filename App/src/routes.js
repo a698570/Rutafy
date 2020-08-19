@@ -5,6 +5,7 @@ import ScrollToTop from './components/ScrollTop'
 import Topbar from "./components/Topbar";
 import Search from "./components/Search";
 import Login from "./components/Login";
+import Favourites from "./components/Favourites";
 
 export default props => (
     <HashRouter>
@@ -14,6 +15,8 @@ export default props => (
           <Route exact path='/' component={ Main } />
           <Route exact path='/search' component={ Search } />
           <Route exact path='/login' component={ Login } />
+          <Route exact path='/favourites' component={ Favourites } />
+
         </Switch>
       </ScrollToTop>
     </HashRouter>
