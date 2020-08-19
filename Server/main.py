@@ -191,7 +191,7 @@ def load_db():
             categories = doc['assetCategoryNames']
 
         place = Place(
-            name=name,
+            name=f'{name} ({municipality})',
             location=location,
             description=description,
             municipality=municipality,
