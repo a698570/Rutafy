@@ -28,6 +28,17 @@ function Search() {
             .then(data => setAllCategories(data));
     }, [])
 
+    useEffect(() => {
+        fetch('http://localhost:8000/places/names',
+            {
+                method: 'GET',
+                mode: 'cors',
+                credentials: 'include',
+            })
+            .then(response => response.json())
+            .then(data => setAllPlaces(data));
+    }, [])
+
     const doSearch = () => {
         let searchParams = new URLSearchParams();
 
