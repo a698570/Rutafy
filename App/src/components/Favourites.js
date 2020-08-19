@@ -1,12 +1,8 @@
 import React, {useEffect, useState} from "react";
 import {withRouter} from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
-import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Button from "@material-ui/core/Button";
-import TextField from "@material-ui/core/TextField";
-import MenuItem from "@material-ui/core/MenuItem";
 import Route from "./Route";
 
 function Favourites() {

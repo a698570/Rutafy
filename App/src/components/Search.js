@@ -29,6 +29,16 @@ function Search() {
     }, [])
 
     useEffect(() => {
+        let user = localStorage.getItem('user')
+        if (user) {
+            let categories = JSON.parse(user)['categories']
+            setCategories(categories)
+        } else {
+            setCategories([])
+        }
+    }, [])
+
+    useEffect(() => {
         fetch('http://localhost:8000/categories',
             {
                 method: 'GET',
@@ -65,6 +75,11 @@ function Search() {
             })
             .then(response => response.json())
             .then(data => setRoutes(data))
+    }
+
+    const clear = () => {
+        setCategories([])
+        setPlaces([])
     }
 
     const makeFav = route_id => {
@@ -147,6 +162,15 @@ function Search() {
                                         }}
                                     >
                                         Search
+                                    </Button>
+                                    <Button
+                                        color="primary"
+                                        variant="contained"
+                                        onClick={() => {
+                                            clear();
+                                        }}
+                                    >
+                                        Clear
                                     </Button>
                                 </div>
                             </Paper>

@@ -38,6 +38,7 @@ function Login() {
             .then(data => {
                 localStorage.setItem('token', data['access_token'])
                 setLogged(true)
+                getUser()
             })
     }
 
@@ -55,8 +56,22 @@ function Login() {
             .then(() => login())
     }
 
+    const getUser = () => {
+        let token = window.localStorage['token']
+        fetch('http://localhost:8000/user',
+            {
+                method: 'GET',
+                mode: 'cors',
+                credentials: 'include',
+                headers: {'Authorization': 'Bearer ' + token}
+            })
+            .then(result => result.json())
+            .then(data => localStorage.setItem('user', JSON.stringify(data)))
+    }
+
     const logout = () => {
         localStorage.removeItem('token')
+        localStorage.removeItem('user')
         setLogged(false)
     }
 
