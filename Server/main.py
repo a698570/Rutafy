@@ -514,4 +514,4 @@ if __name__ == '__main__':
     if len(get_mongo_db().list_collection_names()) == 0:
         load_db()
 
-    uvicorn.run('main:app', host='127.0.0.1', port=settings.port, log_level='info')
+    uvicorn.run('main:app', host='0.0.0.0', port=settings.port, log_level='info')
