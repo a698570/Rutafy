@@ -21,6 +21,7 @@ class Settings(BaseSettings):
     mongo_pwd: str = ''
     mongo_host: str
     mongo_port: int = 27017
+    port: int
 
     class Config:
         env_file = '.env'
@@ -513,4 +514,4 @@ if __name__ == '__main__':
     if len(get_mongo_db().list_collection_names()) == 0:
         load_db()
 
-    uvicorn.run('main:app', host='127.0.0.1', port=8000, log_level='info')
+    uvicorn.run('main:app', host='127.0.0.1', port=settings.port, log_level='info')
