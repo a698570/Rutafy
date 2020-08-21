@@ -20,7 +20,7 @@ class Settings(BaseSettings):
     mongo_user: str = ''
     mongo_pwd: str = ''
     mongo_host: str
-    mongo_port: int
+    mongo_port: int = 27017
 
     class Config:
         env_file = '.env'
