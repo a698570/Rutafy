@@ -12,6 +12,7 @@ function Login() {
     const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
     const [logged, setLogged] = useState(false)
+    const [validCredentials, setValidCredentials] = useState(true)
 
     useEffect(() => {
         let token = localStorage.getItem('token')
@@ -35,11 +36,17 @@ function Login() {
                 credentials: 'include',
                 body: searchParams
             })
-            .then(response => response.json())
-            .then(data => {
-                localStorage.setItem('token', data['access_token'])
-                setLogged(true)
-                getUser()
+            .then(response => {
+                if (response.ok) {
+                    setValidCredentials(true)
+                    response.json().then(data => {
+                        localStorage.setItem('token', data['access_token'])
+                        setLogged(true)
+                        getUser()
+                    })
+                } else {
+                    setValidCredentials(false)
+                }
             })
     }
 
@@ -53,8 +60,13 @@ function Login() {
                 credentials: 'include',
                 body: JSON.stringify(body)
             })
-            .then(response => response.json())
-            .then(() => login())
+            .then(response => {
+                if (response.ok) {
+                    login()
+                } else {
+                    setValidCredentials(false)
+                }
+            })
     }
 
     const getUser = () => {
@@ -104,18 +116,26 @@ function Login() {
                                             <div>
                                                 <form noValidate autoComplete="off">
                                                     <TextField
-                                                        id="username"
-                                                        label="username"
+                                                        id="email"
+                                                        label="Email"
                                                         value={username}
                                                         onChange={e => setUsername(e.target.value)}/>
                                                     <TextField
                                                         id="password"
-                                                        label="password"
+                                                        label="Password"
                                                         type="password"
                                                         value={password}
                                                         onChange={e => setPassword(e.target.value)}/>
                                                 </form>
                                             </div>
+                                            {validCredentials !== true ? (
+                                                    <Typography
+                                                        style={{textTransform: "uppercase"}}
+                                                        gutterBottom
+                                                    >
+                                                        Invalid credentials
+                                                    </Typography>)
+                                                : null}
                                             <div style={{display: "flex", justifyContent: "flex-end"}}>
                                                 <Button
                                                     color="primary"
