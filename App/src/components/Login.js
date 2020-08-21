@@ -6,6 +6,7 @@ import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
+import Api from "./Api";
 
 function Login() {
     const [username, setUsername] = useState('')
@@ -27,7 +28,7 @@ function Login() {
         searchParams.append('username', username);
         searchParams.append('password', password);
 
-        fetch('http://localhost:8000/token',
+        fetch(Api + '/token',
             {
                 method: 'POST',
                 mode: 'cors',
@@ -45,7 +46,7 @@ function Login() {
     const signup = () => {
         let body = {email: username, password: password}
 
-        fetch('http://localhost:8000/user',
+        fetch(Api + '/user',
             {
                 method: 'POST',
                 mode: 'cors',
@@ -58,7 +59,7 @@ function Login() {
 
     const getUser = () => {
         let token = window.localStorage['token']
-        fetch('http://localhost:8000/user',
+        fetch(Api + '/user',
             {
                 method: 'GET',
                 mode: 'cors',

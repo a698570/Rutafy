@@ -7,6 +7,7 @@ import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import Button from "@material-ui/core/Button";
 import Paper from "@material-ui/core/Paper";
+import Api from "./Api";
 
 function Profile() {
     const [logged, setLogged] = useState(false)
@@ -34,7 +35,7 @@ function Profile() {
     }, [])
 
     useEffect(() => {
-        fetch('http://localhost:8000/categories',
+        fetch(Api + '/categories',
             {
                 method: 'GET',
                 mode: 'cors',
@@ -46,7 +47,7 @@ function Profile() {
 
     const addCategories = () => {
         let token = window.localStorage['token']
-        fetch('http://localhost:8000/user/categories',
+        fetch(Api + '/user/categories',
             {
                 method: 'POST',
                 mode: 'cors',

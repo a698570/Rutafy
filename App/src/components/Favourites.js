@@ -4,6 +4,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Route from "./Route";
+import Api from "./Api";
 
 function Favourites() {
     const [logged, setLogged] = useState(false)
@@ -13,7 +14,7 @@ function Favourites() {
         let token = localStorage.getItem('token')
         if (token) {
             setLogged(true)
-            fetch('http://localhost:8000/fav/routes',
+            fetch(Api + '/fav/routes',
                 {
                     method: 'GET',
                     mode: 'cors',

@@ -8,6 +8,7 @@ import Button from "@material-ui/core/Button";
 import TextField from "@material-ui/core/TextField";
 import MenuItem from "@material-ui/core/MenuItem";
 import Route from "./Route";
+import Api from "./Api";
 
 function Search() {
     const [logged, setLogged] = useState(false)
@@ -16,8 +17,7 @@ function Search() {
     const [minutes, setMinutes] = useState(120)
     const [categories, setCategories] = useState([])
     const [allCategories, setAllCategories] = useState([])
-    const [allPlaces, setAllPlaces] = useState(
-        ['Fuerte del Rapitán', 'Castillo de Loarre', 'Hotel San Ramón', 'Iglesia de San Sebastián'])
+    const [allPlaces, setAllPlaces] = useState([])
 
     useEffect(() => {
         let token = localStorage.getItem('token')
@@ -39,7 +39,7 @@ function Search() {
     }, [])
 
     useEffect(() => {
-        fetch('http://localhost:8000/categories',
+        fetch(Api + '/categories',
             {
                 method: 'GET',
                 mode: 'cors',
@@ -50,7 +50,7 @@ function Search() {
     }, [])
 
     useEffect(() => {
-        fetch('http://localhost:8000/places/names',
+        fetch(Api + '/places/names',
             {
                 method: 'GET',
                 mode: 'cors',
@@ -67,7 +67,7 @@ function Search() {
         categories.map(c => searchParams.append('categories', c));
         places.map(p => searchParams.append('places_names', p));
 
-        fetch('http://localhost:8000/routes?' + searchParams.toString(),
+        fetch(Api + '/routes?' + searchParams.toString(),
             {
                 method: 'GET',
                 mode: 'cors',
@@ -84,7 +84,7 @@ function Search() {
 
     const makeFav = route_id => {
         let token = window.localStorage['token']
-        fetch('http://localhost:8000/routes/' + route_id + '/fav',
+        fetch(Api + '/routes/' + route_id + '/fav',
             {
                 method: 'POST',
                 mode: 'cors',
