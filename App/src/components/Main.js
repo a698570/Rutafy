@@ -6,8 +6,6 @@ import Paper from "@material-ui/core/Paper";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
 import Button from "@material-ui/core/Button";
-import InstructionDialog from "./dialogs/InstructionDialog";
-import SwipeDialog from "./dialogs/SwipeDialog";
 
 const backgroundShape = require("../images/shape.svg");
 
@@ -210,14 +208,6 @@ class Main extends Component {
               </Grid>
             </Grid>
           </Grid>
-          <SwipeDialog
-            open={this.state.learnMoredialog}
-            onClose={this.dialogClose}
-          />
-          <InstructionDialog
-            open={this.state.getStartedDialog}
-            onClose={this.closeGetStartedDialog}
-          />
         </div>
       </React.Fragment>
     );
