@@ -22,6 +22,7 @@ class Settings(BaseSettings):
     mongo_host: str
     mongo_port: int = 27017
     port: int
+    app_origin: str
 
     class Config:
         env_file = '.env'
@@ -133,7 +134,7 @@ oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 app = FastAPI()
 
 origins = [
-    'http://localhost:3000',
+    settings.app_origin,
 ]
 
 app.add_middleware(
