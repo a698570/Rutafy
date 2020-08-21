@@ -1,19 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3dad4a464a8e06365ac2c3d10f17ee18",
+    "revision": "a366210660c83dc624e66a41b0b15396",
     "url": "/Rutafy/index.html"
   },
   {
-    "revision": "58884a6067dbd99efcf6",
-    "url": "/Rutafy/static/css/main.25ac248d.chunk.css"
+    "revision": "82bbd1ba8b5f805bc477",
+    "url": "/Rutafy/static/css/main.68a98085.chunk.css"
   },
   {
-    "revision": "99914d6ca9385146dff2",
-    "url": "/Rutafy/static/js/2.512f490e.chunk.js"
+    "revision": "9044228e029b0ad6248b",
+    "url": "/Rutafy/static/js/2.97d05f0c.chunk.js"
   },
   {
-    "revision": "58884a6067dbd99efcf6",
-    "url": "/Rutafy/static/js/main.e68153d2.chunk.js"
+    "revision": "82bbd1ba8b5f805bc477",
+    "url": "/Rutafy/static/js/main.69565e4a.chunk.js"
   },
   {
     "revision": "752d8c03dab78d8e34e7",
