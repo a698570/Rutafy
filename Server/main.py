@@ -1,4 +1,4 @@
-from typing import Optional, List, Dict
+from typing import Optional, List, Dict, Tuple
 from datetime import datetime, timedelta
 from fastapi import Depends, FastAPI, Query, HTTPException, status
 from fastapi.security import OAuth2PasswordBearer, OAuth2PasswordRequestForm
@@ -10,6 +10,7 @@ from pydantic import BaseModel, BaseSettings, EmailStr
 import pymongo
 import json
 from geopy.distance import geodesic
+from collections import Counter
 
 ALGORITHM = 'HS256'
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
@@ -65,6 +66,8 @@ class User(BaseModel):
 
 class UserInDB(User):
     hashed_password: str
+    fav_routes: List = []
+    fav_places: List = []
 
 
 class Location(BaseModel):
@@ -244,7 +247,7 @@ def create_access_token(data: dict, expires_delta: Optional[timedelta] = None):
     return encoded_jwt
 
 
-async def get_current_user(token: str = Depends(oauth2_scheme)):
+async def get_current_user(token: str = Depends(oauth2_scheme)) -> UserInDB:
     credentials_exception = HTTPException(
         status_code=status.HTTP_401_UNAUTHORIZED,
         detail='Could not validate credentials',
@@ -493,21 +496,55 @@ def make_place_favourite(route_id: str, user: User = Depends(get_current_user)):
 
 
 @app.get('/fav/places', response_model=List[Place])
-async def get_fav_places(user: User = Depends(get_current_user)):
+async def get_fav_places(user: UserInDB = Depends(get_current_user)):
     db = get_mongo_db()
-    ids = db.users.find_one({'email': user.email})['fav_places']
+    ids = user.fav_places
     places = [Place(**i) for i in db.places.find({'_id': {'$in': ids}})]
 
     return places
 
 
 @app.get('/fav/routes', response_model=List[Route])
-async def get_fav_routes(user: User = Depends(get_current_user)):
+async def get_fav_routes(user: UserInDB = Depends(get_current_user)):
     db = get_mongo_db()
-    ids = db.users.find_one({'email': user.email})['fav_routes']
+    ids = user.fav_routes
     routes = [Route(**i) for i in db.routes.find({'id': {'$in': ids}})]
 
     return routes
+
+
+@app.get('/stats/categories', response_model=List)
+async def get_stats_categories(
+        user: UserInDB = Depends(get_current_user),
+        max: Optional[int] = Query(10)):
+    db = get_mongo_db()
+    ids = user.fav_routes
+    routes = [Route(**i) for i in db.routes.find({'id': {'$in': ids}})]
+
+    c = Counter()
+
+    for r in routes:
+        for p in r.places:
+            c.update(p.categories)
+
+    return c.most_common(max)
+
+
+@app.get('/stats/municipalities', response_model=List)
+async def get_stats_municipalities(
+        user: UserInDB = Depends(get_current_user),
+        max: Optional[int] = Query(10)):
+    db = get_mongo_db()
+    ids = user.fav_routes
+    routes = [Route(**i) for i in db.routes.find({'id': {'$in': ids}})]
+
+    c = Counter()
+
+    for r in routes:
+        for p in r.places:
+            c.update([p.municipality])
+
+    return c.most_common(max)
 
 if __name__ == '__main__':
     import uvicorn
