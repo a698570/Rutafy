@@ -4,20 +4,17 @@ import BarChart from 'recharts/lib/chart/BarChart';
 import Bar from 'recharts/lib/cartesian/Bar';
 import XAxis from 'recharts/lib/cartesian/XAxis';
 import Tooltip from 'recharts/lib/component/Tooltip';
-import { withTheme } from '@material-ui/styles';
 
-function SimpleLineChart(props) {
-  const { theme, data } = props;
+function SimpleLineChart({data}) {
   return (
     <ResponsiveContainer width="99%" height={225}>
       <BarChart data={data}>
         <XAxis dataKey="name"/>
         <Tooltip/>
-        <Bar dataKey="Type" stackId="a" fill={theme.palette.primary.main} />
-        <Bar dataKey="OtherType" stackId="a" fill={theme.palette.secondary.light} />
+        <Bar dataKey="count" fill="#8884d8" />
       </BarChart>
     </ResponsiveContainer>
   );
 }
 
-export default withTheme(SimpleLineChart);
+export default SimpleLineChart;
