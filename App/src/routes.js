@@ -7,6 +7,7 @@ import Search from "./components/Search";
 import Login from "./components/Login";
 import Favourites from "./components/Favourites";
 import Profile from "./components/Profile";
+import Statistics from "./components/Statistics";
 
 export default props => (
     <HashRouter>
@@ -18,6 +19,7 @@ export default props => (
                 <Route exact path='/login' component={Login}/>
                 <Route exact path='/favourites' component={Favourites}/>
                 <Route exact path='/profile' component={Profile}/>
+                <Route exact path='/stats' component={Statistics}/>
             </Switch>
         </ScrollToTop>
     </HashRouter>

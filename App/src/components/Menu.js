@@ -16,6 +16,10 @@ const Menu = [
     pathname: "/profile"
   },
   {
+    label: "Statistics",
+    pathname: "/stats"
+  },
+  {
     label: "Login",
     pathname: "/login"
   }
