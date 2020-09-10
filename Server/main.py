@@ -298,8 +298,9 @@ def order_places(places: List[Place]) -> List[Place]:
     best_time = 100000000
     best_order = []
 
-    for order in permutations(places):
-        time = route_time(list(order))
+    for order_tuple in permutations(places):
+        order = list(order_tuple)
+        time = route_time(order)
         if time < best_time:
             best_time = time
             best_order = order
