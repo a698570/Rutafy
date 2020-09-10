@@ -11,6 +11,7 @@ import pymongo
 import json
 from geopy.distance import geodesic
 from collections import Counter
+from itertools import permutations
 
 ALGORITHM = 'HS256'
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
@@ -292,9 +293,24 @@ def route_time(places: List[Place]) -> int:
     return time
 
 
+# Order the places to minimize the value of route_time(places)
+def order_places(places: List[Place]) -> List[Place]:
+    best_time = 100000000
+    best_order = []
+
+    for order in permutations(places):
+        time = route_time(list(order))
+        if time < best_time:
+            best_time = time
+            best_order = order
+
+    return best_order
+
+
 def plan_route(time_limit: int, places: List[Place], categories: List[str]) -> Route:
     db = get_mongo_db()
 
+    places = order_places(places)
     time = route_time(places)
 
     # Keep adding intermediate places to visit until the route is long enough
