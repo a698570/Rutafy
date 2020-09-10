@@ -299,7 +299,7 @@ def plan_route(time_limit: int, places: List[Place], categories: List[str]) -> R
         # Select the pair of consecutive places in the route with bigger distance
         for i in range(len(places) - 1):
             pos_1 = places[i].location.coordinates
-            pos_2 = places[i+1].location.coordinates
+            pos_2 = places[i + 1].location.coordinates
             distance = geodesic(pos_1, pos_2).meters
             if distance > big_distance:
                 big_distance = distance
@@ -332,12 +332,17 @@ def plan_route(time_limit: int, places: List[Place], categories: List[str]) -> R
             # TODO: add a better way to handle not finding a new place between a pair
             break
 
-        places = places[:big_i+1] + [new_place] + places[big_i+1:]
+        places = places[:big_i + 1] + [new_place] + places[big_i + 1:]
 
         time = route_time(places)
 
-    route_categories = set()
+    route = make_route_from_places(places)
 
+    return route
+
+
+def make_route_from_places(places: List[Place]) -> Route:
+    route_categories = set()
     for p in places:
         route_categories.update(p.categories)
 
@@ -481,8 +486,35 @@ def get_routes(
     return routes
 
 
+@app.post('/routes', response_model=Route)
+def add_route(places_names: List[str], user: User = Depends(get_current_user)):
+    db = get_mongo_db()
+
+    places = []
+    for name in places_names:
+        result = db.places.find_one({'name': name})
+
+        if not result:
+            raise HTTPException(
+                status_code=status.HTTP_404_NOT_FOUND,
+                detail='Name not found',
+            )
+
+        places += [Place(**result)]
+
+    route = make_route_from_places(places)
+    try:
+        db.routes.insert(route.dict())
+    except pymongo.errors.DuplicateKeyError:
+        pass
+
+    db.users.update({'email': user.email}, {'$addToSet': {'fav_routes': route.id}})
+
+    return route
+
+
 @app.post('/routes/{route_id}/fav')
-def make_place_favourite(route_id: str, user: User = Depends(get_current_user)):
+def make_route_favourite(route_id: str, user: User = Depends(get_current_user)):
     db = get_mongo_db()
     result = db.routes.find_one({'id': route_id})
 
@@ -545,6 +577,7 @@ async def get_stats_municipalities(
             c.update([p.municipality])
 
     return c.most_common(max)
+
 
 if __name__ == '__main__':
     import uvicorn
