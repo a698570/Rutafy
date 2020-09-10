@@ -180,11 +180,17 @@ def load_db():
 
         if 'title' in doc.keys():
             name = doc['title']
+        else:
+            # Places without a name won't be loaded
+            continue
 
         if 'location' in doc.keys():
             coordinates = [float(i) for i in doc['location'].split(',')]
             location['coordinates'] = coordinates
             location = Location(**location)
+        else:
+            # Places without a location won't be loaded
+            continue
 
         if 'description' in doc.keys():
             description = doc['description']
