@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/Rutafy/precache-manifest.a0137ee2bd104045ed58b12e2f7bede9.js"
+  "/Rutafy/precache-manifest.b7ea956e7d43e2b8e687f159dcd5d3fe.js"
 );
 
 self.addEventListener('message', (event) => {
