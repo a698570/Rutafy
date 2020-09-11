@@ -12,6 +12,7 @@
     "opencollective-postinstall": "^2.0.2",
     "query-string": "^6.2.0",
     "react": "^16.8.6",
+    "react-csv": "^2.0.3",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.1",
     "react-scripts": "3.0.1",

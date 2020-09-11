@@ -1,5 +1,5 @@
 import React from "react";
-
+import {CSVLink} from "react-csv";
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
 import Accordion from "@material-ui/core/Accordion";
@@ -10,10 +10,13 @@ import Map from "./Map"
 
 function Route(props) {
     let route = props.route;
-    let coordinates = route['places'].map(p => (
+    let places = route['places'].map(p => (
         {
+            name: p['name'],
             lat: p['location']['coordinates'][0],
-            lng: p['location']['coordinates'][1]
+            lng: p['location']['coordinates'][1],
+            description: p['description'],
+            municipality: p['municipality']
         }
     ))
     return (
@@ -24,22 +27,21 @@ function Route(props) {
                     color="secondary"
                     gutterBottom
                 >
-                    {route['places'].length > 4 ?
-                        route['places'][0]['name'] + ' - ' +
-                        route['places'][1]['name'] + ' - ' +
+                    {places.length > 4 ?
+                        places[0]['name'] + ' - ' +
+                        places[1]['name'] + ' - ' +
                         '... - ' +
-                        route['places'][route['places'].length - 2]['name'] + ' - ' +
-                        route['places'][route['places'].length - 1]['name'] :
-                        route['places'].map(p => p['name'] + ' - ')
+                        places[places.length - 2]['name'] + ' - ' +
+                        places[places.length - 1]['name'] :
+                        places.map(p => p['name'] + ' - ')
                     }
                 </Typography>
                 <Typography variant="body2" gutterBottom>
                     Duration: {route['minutes']} minutes (>{Math.floor(route['minutes'] / 60)} hours)
                 </Typography>
-                <Map coordinates={coordinates} zoom={7}/>
+                <Map coordinates={places.map(p => ({lat: p['lat'], lng: p['lng']}))} zoom={7}/>
 
-                {route['places'].map(p => (
-
+                {places.map(p => (
                     <div>
                         <Accordion>
                             <AccordionSummary
@@ -55,9 +57,9 @@ function Route(props) {
 
                                 <Typography variant="body2" gutterBottom>
                                     Coordinates: {
-                                    p['location']['coordinates'][0] +
+                                    p['lat'] +
                                     ' , ' +
-                                    p['location']['coordinates'][1]
+                                    p['lng']
                                 }
                                     <br/><br/>
                                     {p['description']}
@@ -66,6 +68,12 @@ function Route(props) {
                         </Accordion>
                     </div>
                 ))}
+                <CSVLink
+                    data={places}
+                    filename={route['id'] + '.csv'}
+                >
+                    Download CSV
+                </CSVLink>
             </div>
         </Paper>
     )
