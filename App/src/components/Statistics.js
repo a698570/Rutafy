@@ -3,7 +3,6 @@ import {withRouter} from "react-router-dom";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import Typography from "@material-ui/core/Typography";
 import Grid from "@material-ui/core/Grid";
-import Route from "./Route";
 import Api from "./Api";
 import SimpleLineChart from "./SimpleLineChart";
 

@@ -8,6 +8,10 @@ const Menu = [
     pathname: "/search"
   },
   {
+    label: "Add",
+    pathname: "/add"
+  },
+  {
     label: "Favourites",
     pathname: "/favourites"
   },

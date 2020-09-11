@@ -136,6 +136,32 @@ class Main extends Component {
                       color="secondary"
                       gutterBottom
                     >
+                      Add
+                    </Typography>
+                    <Typography variant="body2" gutterBottom>
+                      Add a custom route to your favourites
+                    </Typography>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <Button
+                      color="primary"
+                      variant="contained"
+                      className={classes.actionButtom}
+                      href='#add'
+                    >
+                      Go
+                    </Button>
+                  </div>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={8}>
+                <Paper className={classes.paper}>
+                  <div className={classes.box}>
+                    <Typography
+                      style={{ textTransform: "uppercase" }}
+                      color="secondary"
+                      gutterBottom
+                    >
                       Favourites
                     </Typography>
                     <Typography variant="body2" gutterBottom>
@@ -174,6 +200,32 @@ class Main extends Component {
                       variant="contained"
                       className={classes.actionButtom}
                       href='#profile'
+                    >
+                      Go
+                    </Button>
+                  </div>
+                </Paper>
+              </Grid>
+              <Grid item xs={12} md={8}>
+                <Paper className={classes.paper}>
+                  <div className={classes.box}>
+                    <Typography
+                      style={{ textTransform: "uppercase" }}
+                      color="secondary"
+                      gutterBottom
+                    >
+                      Statistics
+                    </Typography>
+                    <Typography variant="body2" gutterBottom>
+                      See statistics about your favourite routes
+                    </Typography>
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "flex-end" }}>
+                    <Button
+                      color="primary"
+                      variant="contained"
+                      className={classes.actionButtom}
+                      href='#stats'
                     >
                       Go
                     </Button>
